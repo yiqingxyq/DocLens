@@ -1,0 +1,142 @@
+[
+    {
+        "role": "system",
+        "content": "Instruction: You are a helpful medical assistant. Please evaluate whether the clinical note provided by an AI assistant can fully entail each claim below. Also generate an explanation for your answer. Please output '1' or '0' for each claim, where '1' means the claim can be fully entailed by the clinical note, and '0' means the claim contains information that cannot be entailed by the clinical note. Generate the answer as a list of json dicts. Each dict should be in the format of {'claim': the original claim, 'explanation': the reason why the entailment prediction is made, 'entailment_prediction': 1 or 0, whether the claim can be entailed}."
+    },
+    {
+      "role": "system",
+      "name": "example_user",
+      "content": {
+          "clinical_note": "CHIEF COMPLAINT\n\nRight knee joint pain.\n\nHISTORY OF PRESENT ILLNESS\n\nAndrew is a 62-year-old male with a past medical history significant for a kidney transplant, hypothyroidism, and arthritis, presenting today with complaints of right knee joint pain. The patient explains that he experienced worsening pain over the weekend while moving boxes up and down basement stairs. He describes the pain in both knees as equally painful. Andrew denies any specific injury and attributes the pain to repetition and weight of the boxes. The patient has tried Tylenol and icing for pain relief without much success. He also mentions that the pain interfered with his sleep.\n\nPAST MEDICAL HISTORY\n\n- Kidney transplant\n- Hypothyroidism\n- Arthritis\n\nREVIEW OF SYSTEMS\n\n- Musculoskeletal: Right knee joint pain.\n- Constitutional: No fever, chills, or nausea reported.\n",
+          "claims": [
+              "The patient is a 62-year-old male.",
+              "The patient has a past medical history of kidney transplant, hypothyroidism, and arthritis.",
+              "The patient presents today with joint pain in his knees after moving boxes up and down the basement stairs.",
+              "Despite the pain, the patient is still able to perform his daily activities.",
+              "The patient's knee soreness interrupted his sleep on Saturday.",
+              "Tylenol and icing his knees did not significantly help the patient's pain.",
+              "The patient had a kidney transplant.",
+              "Regarding his kidney transplant, the patient had a follow visit with Dr. Gutierrez a couple of weeks ago.",
+              "Everything was normal when the patient visted Dr. Gutierrez.",
+              "The patient's immunosuppressant medications are still being utilized.",
+              "The patient had hypothyroidism before.",
+              "The patient's hypothyroidism is managed with Synthroid, which he takes regularly.",
+              "The patient occasionally experiences arthritis pain in his elbow.",
+              "The patient denies any other symptoms such as fever and chills."
+          ]
+      }
+    },
+    {
+      "role": "system",
+      "name": "example_assistant",
+      "content": [
+          {
+            "claim": "The patient is a 62-year-old male.",
+            "explanation": "The clinical note states 'Andrew is a 62-year-old male', which supports the claim.",
+            "entailment_prediction": 1
+          },
+          {
+            "claim": "The patient has a past medical history of kidney transplant, hypothyroidism, and arthritis.",
+            "explanation": "The past medical history section of the clinical note lists 'Kidney transplant', 'Hypothyroidism', and 'Arthritis', supporting the claim.",
+            "entailment_prediction": 1
+          },
+          {
+            "claim": "The patient presents today with joint pain in his knees after moving boxes up and down the basement stairs.",
+            "explanation": "The history of present illness section states 'The patient explains that he experienced worsening pain over the weekend while moving boxes up and down basement stairs,' which aligns with the claim.",
+            "entailment_prediction": 1
+          },
+          {
+            "claim": "Despite the pain, the patient is still able to perform his daily activities.",
+            "explanation": "The clinical note does not provide any information about the patient's ability to perform daily activities, so the claim cannot be entailed.",
+            "entailment_prediction": 0
+          },
+          {
+            "claim": "The patient's knee soreness interrupted his sleep on Saturday.",
+            "explanation": "The clinical note states that 'the pain interfered with his sleep' but does not specify the day it interrupted his sleep, so the claim cannot be entailed.",
+            "entailment_prediction": 0
+          },
+          {
+            "claim": "Tylenol and icing his knees did not significantly help the patient's pain.",
+            "explanation": "The clinical note states 'The patient has tried Tylenol and icing for pain relief without much success,' which supports the claim.",
+            "entailment_prediction": 1
+          },
+          {
+            "claim": "The patient had a kidney transplant.",
+            "explanation": "The past medical history section of the clinical note lists 'Kidney transplant', which supports the claim.",
+            "entailment_prediction": 1
+          },
+          {
+            "claim": "Regarding his kidney transplant, the patient had a follow visit with Dr. Gutierrez a couple of weeks ago.",
+            "explanation": "The clinical note does not mention any follow-up visit with Dr. Gutierrez, so the claim cannot be entailed.",
+            "entailment_prediction": 0
+          },
+          {
+            "claim": "Everything was normal when the patient visted Dr. Gutierrez.",
+            "explanation": "There is no mention of a visit with Dr. Gutierrez in the clinical note, so the claim cannot be entailed.",
+            "entailment_prediction": 0
+          },
+          {
+            "claim": "The patient's immunosuppressant medications are still being utilized.",
+            "explanation": "There is no mention of the patient's immunosuppressant medications in the clinical note, so the claim cannot be entailed.",
+            "entailment_prediction": 0
+          },
+          {
+            "claim": "The patient had hypothyroidism before.",
+            "explanation": "The past medical history section of the clinical note lists 'Hypothyroidism', which supports the claim.",
+            "entailment_prediction": 1
+          },
+          {
+            "claim": "The patient's hypothyroidism is managed with Synthroid, which he takes regularly.",
+            "explanation": "There is no mention of Synthroid or the patient's medication schedule for hypothyroidism in the clinical note, so the claim cannot be entailed.",
+            "entailment_prediction": 0
+          },
+          {
+            "claim": "The patient occasionally experiences arthritis pain in his elbow.",
+            "explanation": "The clinical note mentions 'arthritis' in the past medical history section but does not specify any arthritis pain in the patient's elbow, so the claim cannot be entailed.",
+            "entailment_prediction": 0
+          },
+          {
+            "claim": "The patient denies any other symptoms such as fever and chills.",
+            "explanation": "The review of systems section states 'Constitutional: No fever, chills, or nausea reported.', which supports the claim.",
+            "entailment_prediction": 1
+          }
+      ]
+    },
+    {
+      "role": "system",
+      "name": "example_user",
+      "content": {
+          "clinical_note": "PHYSICAL EXAM\n\n• Cardiovascular: 3/6 systolic ejection murmur, previously noted.\n• Extremities: 1+ pitting edema.\n\n",
+          "claims": [
+              "The patient's blood pressure is high.",
+              "The patient has a grade 3/6 systolic ejection murmur.",
+              "The patient exhibits 1+ pitting edema in both lower extremities."
+          ]
+      }
+    },
+    {
+      "role": "system",
+      "name": "example_assistant",
+      "content": [
+          {
+            "claim": "The patient's blood pressure is high.",
+            "explanation": "The clinical note does not mention anything about the blood pressure.",
+            "entailment_prediction": 0
+          },
+          {
+            "claim": "The patient has a grade 3/6 systolic ejection murmur.",
+            "explanation": "The PHYSICAL EXAM section mentions that 'Cardiovascular: 3/6 systolic ejection murmur', which supports the claim.",
+            "entailment_prediction": 1
+          },
+          {
+            "claim": "The patient exhibits 1+ pitting edema in both lower extremities.",
+            "explanation": "The clinical note meantions 'Extremities: 1+ pitting edema', but does not specify it is in upper or lower extremities.",
+            "entailment_prediction": 0
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": ""
+    }
+  ]

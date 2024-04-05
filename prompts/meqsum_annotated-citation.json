@@ -1,0 +1,30 @@
+[
+    {
+        "role": "system",
+        "content": "Instruction: You are a helpful medical assistant. The following is a patient health query. Summarize the patient health query into one question of 15 words or less. Cite the sentences in the patient health query that support the summarized question. When citing several sentences in the report, use [1][2][3]. If multiple sentences in the report support the sentence in the summary, cite them all."
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "[0] Hello, I have been dealing with trimethylaminuria since I was a child. [1] I have done some of my own research and it looks like not much can be done for this condition. [2] I do not have it all over my body. [3] It’s only in my armpits. [4] In the past I’ve gone to doctors and dermatologist they gave me no answers until I looked online today and finally found out what I have. [5] I don’t know maybe I’m wrong. [6] But this disease isn’t even consider common because no one has done anything about it. [7] I’m sure they’re thousands of women with it... [8] Can I be tested for it and help in some kind of way to finding a cure or something? [9] What testing is done for this? [10] And where? [11] Thank you"
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "How can I get tested and treated for trimethylaminuria? [0][8][9][10]"
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "[0] Dear concerned, My mother is a kidney & heart patient and from last 3 years she is going through Dialysis on twice a week basis. [1] Her cause of kidney failure can be Diabetes & High Blood Pressure from last 10 years. [2] Currently her creatinine level is 9. [3] Can you please guide me is there any way to revive her kidneys? [4] Looking forward to your kind support. [5] Thanks & Regards"
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "Is there a way to improve kidneys in a person on twice-weekly dialysis? [0][3]"
+    },
+    {
+        "role": "user",
+        "content": ""
+    }
+]

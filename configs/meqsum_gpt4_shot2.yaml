@@ -1,0 +1,5 @@
+---
+prompt_file: prompts/meqsum_annotated-citation.json
+model: gpt-4
+shot: 2
+quick_test: 3

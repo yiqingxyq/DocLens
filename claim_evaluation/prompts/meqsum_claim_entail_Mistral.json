@@ -1,0 +1,6 @@
+[
+    {
+        "role": "user",
+        "content": "You are a helpful medical assistant. Please evaluate whether question A is the specification of question B. Output '1' or '0' as the answer. Output '1' if the question A is the specification of question B, and otherwise '0'. Generate the answer in the following format:\nexplanation: the reason why the prediction is made.\n prediction: 1 or 0, whether question A is the specification of question B.\n\nquestion A: __TEXT__\nquestion B: __CLAIM__\n\n"
+    }
+]

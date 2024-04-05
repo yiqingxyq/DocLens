@@ -1,0 +1,6 @@
+[
+    {
+      "role": "user",
+      "content": "Instruction: You are a helpful medical assistant. Below is a long question asked by the patient and a question summary. Please act as an impartial judge and evaluate whether whether the long question is the specification of the question summary. Also generate an explanation for your prediction and the idx of the sentences in the long question that support your prediction. Output '1' or '0' as the answer. Output '1' if the long question is the specification of question summary, and otherwise '0'. Generate the answer in the following format:\nexplanation: the reason why the entailment prediction is made.\nprovenance: the idx of the sentences in the long question that are directly related to the question summary. Generate in the format of '[idx]'. If there are multiple idx, use '[idx1][idx2][idx3]'.\nentailment_prediction: 1 or 0, whether the long question is the specification of the question summary.\n\nsentences_in_the_long_question:\n__TEXT__\nquestion_summary: __CLAIM__\n\n"
+    }
+]

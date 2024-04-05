@@ -1,0 +1,6 @@
+[
+    {
+        "role": "user",
+        "content": "You are a helpful medical assistant. Please evaluate whether the radiology report provided by an AI assistant can fully entail the claim below. Also generate an explanation for your answer. Please output '1' or '0' as your entailment prediction, where '1' means the claim can be fully entailed by the radiology report, and '0' means the claim contains information that cannot be entailed by the radiology report. Generate the answer in the following format:\nexplanation: the reason why the entailment prediction is made.\n entailment_prediction: 1 or 0, whether the claim can be entailed.\n\nradiology report: __TEXT__\nclaim: __CLAIM__\n\n"
+    }
+]

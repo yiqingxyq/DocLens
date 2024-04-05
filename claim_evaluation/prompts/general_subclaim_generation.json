@@ -1,0 +1,20 @@
+[
+    {
+        "role": "system",
+        "content": "Instruction: You are a helpful medical assistant. Read the clinical report and generate at least __MIN_CLAIM__ at most __MAX_CLAIM__ short claims that are supported by the clinical report. Each short claim should contain only one fact. The generated claims should cover all facts in the clinical report."
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "content of the clinical report ..."
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "Claim 1: ...\nClaim 2: ... "
+    },
+    {
+        "role": "user",
+        "content": ""
+    }
+]

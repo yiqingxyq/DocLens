@@ -1,0 +1,86 @@
+[
+    {
+        "role": "system",
+        "content": "Instruction: You are a helpful medical assistant. Below is a few conversational turns in the dialogue between the doctor and the patient and a sentence in the clinical note based on this dialogue. Please act as an impartial judge and evaluate whether the conversational turns can fully entail the sentence in the clinical note. Also generate an explanation for your prediction and the indices of the conversational turns that support your prediction. Please output '1' or '0', where '1' means the sentence in the note can be fully entailed by the conversational turns, and '0' means the sentence in the note contains information that cannot be entailed by the conversational turns. Generate the answer as a json dict in the format of {'explanation': the reason why the entailment prediction is made, 'provenance': the indices of the conversational turns that support your prediction, 'entailment_prediction': 1 or 0, whether the sentence in the note can be entailed}."
+    },
+    {
+      "role": "system",
+      "name": "example_user",
+      "content": {
+        "sentence_in_note": "Regarding her congestive heart failure, Martha has been adhering to a low-sodium diet and taking her medication.",
+        "conversational_turns": [
+          {
+            "idx": "9", 
+            "speaker": "patnet",
+            "content": "i've been doing well with that . i resisted , as much , as i could , from the tater tots , you know , the soft pretzels , the salty foods that i , i love to eat . and i've been doing a really good job ."
+          },
+          {
+            "idx": "10", 
+            "speaker": "doctor",
+            "content": "okay , all right . well , i'm glad to hear that . and you're taking your medication ?"
+          }
+        ]
+      }
+    },
+    {
+      "role": "system",
+      "name": "example_assistant",
+      "content": {
+        "explanation": "In the conversational turns, the doctor asked 'i know we've talked about watching a low sodium diet. are you doing oay with that?' and the patient said 'i resisted the salty foods that i love to eat', which supports the claim 'Martha has been adhering to a low-sodium diet' in the sentence. Also, the doctor asked 'how are you doing with the congestive heart failure' before asking about the diet, which indicates that the diet is related to the patient's congestive heart failure. However, in the provided conversational turns, the patient did not answer whether she is taking her medication, so we are not sure whether the patient is taking her medication and hence the sentence in the note cannot be fully entailed from the conversational turns.",
+        "provenance": [9],
+        "entailment_prediction": 0
+      }
+    },
+    {
+      "role": "system",
+      "name": "example_user",
+      "content": {
+        "sentence_in_note": "He notes that he saw Dr. Gutierrez a couple of weeks ago, and everything was normal at that time.",
+        "conversational_turns": [
+          {
+            "idx": "24", 
+            "speaker": "doctor",
+            "content": "okay . all right . now , i know that you've had the kidney transplant a few years ago for some polycystic kidneys ."
+          },
+          {
+            "idx": "25", 
+            "speaker": "patient",
+            "content": "mm-hmm ."
+          },
+          {
+            "idx": "26", 
+            "speaker": "doctor",
+            "content": "um , how are you doing with that ? i know that you visited dr. gutierrez a couple of weeks ago ."
+          },
+          {
+            "idx": "27", 
+            "speaker": "patient",
+            "content": "yes ."
+          },
+          {
+            "idx": "28", 
+            "speaker": "doctor",
+            "content": "everything's okay ?"
+          },
+          {
+            "idx": "29", 
+            "speaker": "patient",
+            "content": "so far , so good ."
+          }
+        ]
+      }
+    },
+    {
+      "role": "system",
+      "name": "example_assistant",
+      "content": {
+        "explanation": "The patient answered 'yes' when he was asked whether he visited dr. gutierrez a couple of weeks ago. He also confirms that everything is okay, so the sentence in the note can be entailed from the conversational turns.",
+        "provenance": [26,27,28,29],
+        "entailment_prediction": 1
+      }
+    },
+    {
+      "role": "user",
+      "content": ""
+    }
+  ]

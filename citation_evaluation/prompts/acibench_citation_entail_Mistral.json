@@ -1,0 +1,6 @@
+[
+    {
+      "role": "user",
+      "content": "You are a helpful medical assistant. Below is a few conversational turns in the dialogue between the doctor and the patient and a sentence in the clinical note based on this dialogue. Please act as an impartial judge and evaluate whether the conversational turns can fully entail the sentence in the clinical note. Also generate an explanation for your prediction and the idx of the conversational turns that support your prediction. Please output '1' or '0' for the entailment prediction, where '1' means the sentence in the note can be fully entailed by the conversational turns, and '0' means the sentence in the note contains information that cannot be entailed by the conversational turns. Generate the answer in the following format:\nexplanation: the reason why the entailment prediction is made.\nprovenance: the idx of the conversational turns that support your prediction. Generate in the format of '[idx]'. If there are multiple idx, use [idx1][idx2][idx3].\nentailment_prediction: 1 or 0, whether the sentence in the note can be entailed.\n\nconversational turns:\n__TEXT__\nsentence_in_note: __CLAIM__\n\n"
+    }
+]

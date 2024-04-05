@@ -1,0 +1,42 @@
+[
+    {
+        "role": "system",
+        "content": "You are a helpful medical assistant. Please evaluate whether question A is essentially the same as question B. Output '1' or '0' as the answer. Output '1' if the question A is essentially the same as question B, and otherwise '0'. Generate the answer as a json dict in the format of {'explanation': the reason why the prediction is made, 'prediction': 1 or 0, whether question A is essentially the same as question B}."
+    },
+    {
+      "role": "system",
+      "name": "example_user",
+      "content": {
+          "question A": "Is there research on stem cell treatment for lichen sclerosis?",
+          "question B": "What is the best treatment for lichen sclerosus, including experimental treatments?"
+      }
+    },
+    {
+      "role": "system",
+      "name": "example_assistant",
+      "content": {
+            "explanation": "Question A specifically asks about research on stem cell treatment for lichen sclerosis. This is a focused inquiry into one particular type of treatment (stem cell). Question B is broader and asking about the best treatment. This encompasses a range of treatments, not limited to stem cell therapy, and seeks the most effective option among them. As a result, question A and B contain different information.",
+            "prediction": 0
+      }
+    },
+    {
+      "role": "system",
+      "name": "example_user",
+      "content": {
+          "question A": "What are the fertility options for a 13-year-old with Klinefelter's syndrome (47,XXY)?",
+          "question B": "How can we improve fertility in Klinefelter syndrome karyotype 47 XXY?"
+      }
+    },
+    {
+      "role": "system",
+      "name": "example_assistant",
+      "content": {
+            "explanation": "Both question A and question B are asking about fertility options for individuals with Klinefelter syndrome with a 47,XXY karyotype. The questions are essentially the same, focusing on fertility improvement in the context of Klinefelter syndrome.",
+            "prediction": 1
+      }
+    },
+    {
+      "role": "user",
+      "content": ""
+    }
+  ]

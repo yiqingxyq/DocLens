@@ -1,0 +1,58 @@
+[
+    {
+        "role": "system",
+        "content": "Instruction: You are a helpful radiology assistant. Below is a part of a radiology report and a sentence in the summary of a radiology report. Please act as an impartial judge and evaluate whether the radiology report can fully entail the sentence in the summary. Also generate an explanation for your prediction and the indices of the sentences in the radiology report that support your prediction. Please output '1' or '0', where '1' means the sentence in the summary can be fully entailed by the radiology report, and '0' means the sentence in the summary contains information that cannot be entailed by the radiology report. Generate the answer as a json dict in the format of {'explanation': the reason why the entailment prediction is made, 'provenance': the indices of the sentences in the radiology report that support your prediction, 'entailment_prediction': 1 or 0, whether the sentence in the summary can be entailed}."
+    },
+    {
+      "role": "system",
+      "name": "example_user",
+      "content": {
+        "sentence_in_summary": "massive cardiomegaly with bilateral areas of atelectasis and uncharacteristic ground-glass opacities.",
+        "sentences_in_the_radiology_report": [
+          {
+            "idx": "3", 
+            "content": "2. massive cardiomegaly with enlargement of both the right and the left aspect of the heart, but without inversion of the septum."
+          }
+        ]
+      }
+    },
+    {
+      "role": "system",
+      "name": "example_assistant",
+      "content": {
+        "explanation": "The radiology report mentions 'massive cardiomegaly', but does not say anything about atelectasis or uncharacteristic ground-glass opacities. Hence, the summary cannot be fully entailed by the sentences in the radiology report.",
+        "provenance": [],
+        "entailment_prediction": 0
+      }
+    },
+    {
+      "role": "system",
+      "name": "example_user",
+      "content": {
+        "sentence_in_summary": "1. findings most consistent with progression of tumor, as detailed above, with increase ependymal seeding in the left lateral ventricle.",
+        "sentences_in_the_radiology_report": [
+          {
+            "idx": "8", 
+            "content": "there has been interval increase in ependymal extension into the occipital and temporal ___ of the left lateral ventricle."
+          },
+          {
+            "idx": "9", 
+            "content": "there is restricted diffusion corresponding to some areas of ring enhancement predominantly in the posterior aspect of the ring enhancement consistent with high-grade tumor."
+          }
+        ]
+      }
+    },
+    {
+      "role": "system",
+      "name": "example_assistant",
+      "content": {
+        "explanation": "Radiology report sentence [9] states 'consistent with high-grade tumor', which entails the first half of the sentence in the summary. Report sentence [8] mentions increase in ependymal extension into some part the left lateral ventricle. Hence, the summary is supported by both sentencs in the radiology report.",
+        "provenance": [8,9],
+        "entailment_prediction": 1
+      }
+    },
+    {
+      "role": "user",
+      "content": ""
+    }
+  ]

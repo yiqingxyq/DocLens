@@ -1,0 +1,74 @@
+[
+    {
+        "role": "system",
+        "content": "Instruction: You are a helpful medical assistant. Below is a long question asked by the patient and a question summary. Please act as an impartial judge and evaluate whether whether the long question is the specification of the question summary. Also generate an explanation for your prediction and the indices of the sentences in the long question that support your prediction. Output '1' or '0' as the answer. Output '1' if the long question is the specification of question summary, and otherwise '0'. Generate the answer as a json dict in the format of {'explanation': the reason why the prediction is made, 'provenance': the indices of the sentences in the long question that are directly related to the question summary, 'prediction': 1 or 0, whether the long question is the specification of the question summary}."
+    },
+    {
+      "role": "system",
+      "name": "example_user",
+      "content": {
+        "question_summary": "How can i find medical assistance to increase copper retention while on Vidaza?",
+        "sentences_in_the_long_question": [
+          {
+            "idx": "0", 
+            "content": "I have MDS, I cannot hold on to copper"
+          },
+          {
+            "idx": "7", 
+            "content": "The doctors don't know why or who to contact?"
+          }
+        ]
+      }
+    },
+    {
+      "role": "system",
+      "name": "example_assistant",
+      "content": {
+        "explanation": "The long question sentence [0] states that the patient has trouble with the copper retention. Sentence [7] mentions that the patient wants to find medical assistance. However, there is no information about Vidaza. Thus, the long question is not a specification of the question summary.",
+        "provenance": [],
+        "prediction": 0
+      }
+    },
+    {
+      "role": "system",
+      "name": "example_user",
+      "content": {
+        "question_summary": "How can I get tested and treated for trimethylaminuria?",
+        "sentences_in_the_long_question": [
+          {
+            "idx": "0", 
+            "content": "Hello, I have been dealing with trimethylaminuria since I was a child."
+          },
+          {
+            "idx": "1", 
+            "content": "I have done some of my own research and it looks like not much can be done for this condition."
+          },
+          {
+            "idx": "8", 
+            "content": "Can I be tested for it and help in some kind of way to finding a cure or something?"
+          },
+          {
+            "idx": "9", 
+            "content": "What testing is done for this?"
+          },
+          {
+            "idx": "10", 
+            "content": "And where?"
+          }
+        ]
+      }
+    },
+    {
+      "role": "system",
+      "name": "example_assistant",
+      "content": {
+        "explanation": "sentence [0] of the long question states that the patient has a history with trimethylaminuria. [8] asks for the test and cure or treatment of trimethylaminuria. [9] and [10] are also directly related to the process of getting tested in the question summary. Thus, the long question can be viewed as a specification of the question summary. Sentence [1] states that the patient does not know what to do about the condition, which is irrelevant to the summary.",
+        "provenance": [0,8,9,10],
+        "prediction": 1
+      }
+    },
+    {
+      "role": "user",
+      "content": ""
+    }
+  ]

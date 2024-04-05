@@ -1,0 +1,7 @@
+---
+prompt_file: prompts/mimic_annotated-citation.json
+azure: true
+model: gpt-4
+deploy_name: gpt-4
+shot: 12
+quick_test: 3

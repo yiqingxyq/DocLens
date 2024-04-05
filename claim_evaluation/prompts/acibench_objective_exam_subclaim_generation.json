@@ -1,0 +1,30 @@
+[
+    {
+        "role": "system",
+        "content": "You are a helpful medical assistant. Read the clinical note and generate at least __MIN_CLAIM__ at most __MAX_CLAIM__ short claims that are supported by the clinical note. Each short claim should contain only one fact. The generated claims should cover all facts in the clinical note."
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "PHYSICAL EXAMINATION\n\n• Cardiovascular: Grade 3/6 systolic ejection murmur.\n1+ pitting edema of the bilateral lower extremities.\n\nVITALS REVIEWED\n\n• Blood Pressure: Elevated.\n\n"
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "Claim 1: The patient has a grade 3/6 systolic ejection murmur.\nClaim 2: The patient exhibits 1+ pitting edema in both lower extremities.\nClaim 3: The patient's blood pressure is elevated."
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "PHYSICAL EXAMINATION\n\n• Cardiovascular: 2/6 systolic ejection murmur, stable.\n• Musculoskeletal: There is edema and erythema of the right knee with pain to palpation. Range of motion is decreased. Left knee exam is normal.\n\n"
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "Claim 1: The patient has a 2/6 systolic ejection murmur in the cardiovascular exam, which is stable.\nClaim 2: The patient's right knee shows signs of edema, erythema, and pain on palpation.\nClaim 3: The patient's right knee has decreased range of motion.\nClaim 3: Exam of left knee is normal."
+    },
+    {
+        "role": "user",
+        "content": ""
+    }
+]

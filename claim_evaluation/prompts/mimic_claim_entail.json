@@ -1,0 +1,112 @@
+[
+    {
+        "role": "system",
+        "content": "Instruction: You are a helpful medical assistant. Please evaluate whether the summary of a radiology report provided by an AI assistant can fully entail each claim below. Also generate an explanation for your answer. Please output '1' or '0' for each claim, where '1' means the claim can be fully entailed by the summary, and '0' means the claim contains information that cannot be entailed by the summary. Generate the answer as a list of json dicts. Each dict should be in the format of {'claim': the original claim, 'explanation': the reason why the entailment prediction is made, 'entailment_prediction': 1 or 0, whether the claim can be entailed}."
+    },
+    {
+      "role": "system",
+      "name": "example_user",
+      "content": {
+          "radiology_report": "1. No pulmonary artery filling defect and normal thoracic aorta contour. 2. Moderate bilateral pleural effusions. 3. Multiple areas of opacity in both lungs, indicative of pneumonia, with better aeration in the upper lobes. 4. Development of bronchiectasis in lingula, left upper lobe, and right middle lobe since the last exam.\n",
+          "claims": [
+            "No filling defect is identified within the pulmonary arteries.",
+            "The thoracic aorta maintains a normal contour.",
+            "Small mediastinal lymph nodes are present.",
+            "The largest mediastinal lymph node measures 1.2 cm in the left paratracheal station.",
+            "Multifocal airspace opacities are seen throughout both lungs.",
+            "The pleural effusions of lungs have slightly increased since the prior exam."
+          ]
+      }
+    },
+    {
+      "role": "system",
+      "name": "example_assistant",
+      "content": [
+          {
+            "claim": "No filling defect is identified within the pulmonary arteries.",
+            "explanation": "The summary states that there is 'no pulmonary artery filling defect', supporting the claim.",
+            "entailment_prediction": 1
+          },
+          {
+            "claim": "The thoracic aorta maintains a normal contour.",
+            "explanation": "The summary states 'the thoracic aorta maintains a normal contour', supporting the claim.",
+            "entailment_prediction": 1
+          },
+          {
+            "claim": "Small mediastinal lymph nodes are present.",
+            "explanation": "The summary does not mention 'mediastinal lymph', hence the claim cannot be entailed.",
+            "entailment_prediction": 0
+          },
+          {
+            "claim": "The largest mediastinal lymph node measures 1.2 cm in the left paratracheal station.",
+            "explanation": "The summary does not mention 'mediastinal lymph', hence the claim cannot be entailed.",
+            "entailment_prediction": 0
+          },
+          {
+            "claim": "Multifocal airspace opacities are seen throughout both lungs.",
+            "explanation": "The summary states there are multiple areas of opacity in both lungs, which entails the claim.",
+            "entailment_prediction": 1
+          },
+          {
+            "claim": "The pleural effusions of lungs have slightly increased since the prior exam.",
+            "explanation": "The summary only states 'Moderate bilateral pleural effusions', but does not mention whether it is increased or decreased from the last exam. Hence the claim cannot be entailed.",
+            "entailment_prediction": 0
+          }
+      ]
+    },
+    {
+      "role": "system",
+      "name": "example_user",
+      "content": {
+          "radiology_report": "1. Persistent nonenhancement of the left vertebral artery over a long segment, with a slight enhancement near the origin. 2. Decrease in size of the left vertebral artery in the v3 segment, with uncertainty if due to spatial resolution or actual change. 3. Narrowing of the left v4 segment, with the distal artery measuring 2mm, narrower than prior study's 2.5mm. 4. Origins of the arch vessels are patent. 5. Small calcification observed at the brachiocephalic artery. 6. Right and left carotid and right vertebral arteries are patent, with no significant stenosis, occlusion or aneurysm in the internal carotids. 7. Small fluid/mucosal thickening and secretions in the sphenoid sinus and ethmoid air cells. 8. Previously noted fractures in the left c6 facet and adjacent transverse foramen; small nodes seen in the neck.\n",
+          "claims": [
+            "There is a persistent lack of enhancement of the left vertebral artery over a long segment.",
+            "Only a short segment close to the origin is patent proximally.",
+            "Follow-up is recommended as clinically indicated to assess for stability or progression.",
+            "There is a mild decrease in the size of the distal left vertebral artery in the v3 and v4 segments compared to the prior study.",
+            "Fractures are noted involving the left c6 facet and transverse foramen.",
+            "The fractures were better evaluated on the prior CT c-spine study."
+          ]
+      }
+    },
+    {
+      "role": "system",
+      "name": "example_assistant",
+      "content": [
+          {
+            "claim": "There is a persistent lack of enhancement of the left vertebral artery over a long segment.",
+            "explanation": "The summary states 'persistent nonenhancement of the left vertebral artery over a long segment', which is the same as the claim.",
+            "entailment_prediction": 1
+          },
+          {
+            "claim": "Only a short segment close to the origin is patent proximally.",
+            "explanation": "The summary mentions 'origins of the arch vessels', it does not mention the segment close to the origin. As a result, the claim cannot be entailed.",
+            "entailment_prediction": 0
+          },
+          {
+            "claim": "Follow-up is recommended as clinically indicated to assess for stability or progression.",
+            "explanation": "The summary does not mention any follow-ups, so the claim cannot be entailed.",
+            "entailment_prediction": 0
+          },
+          {
+            "claim": "There is a mild decrease in the size of the distal left vertebral artery in the v3 and v4 segments compared to the prior study.",
+            "explanation": "The summary states that there is 'decrease in size of the left vertebral artery in the v3 segment' and 'narrowing of the left v4 segment', which indicates 'decrease in the size of the distal left vertebral artery in the v3 and v4 segments' in the claim.",
+            "entailment_prediction": 1
+          },
+          {
+            "claim": "Fractures are noted involving the left c6 facet and transverse foramen.",
+            "explanation": "The summary states 'fractures in the left c6 facet and adjacent transverse foramen', which entails the claim.",
+            "entailment_prediction": 1
+          },
+          {
+            "claim": "The fractures were better evaluated on the prior CT c-spine study.",
+            "explanation": "The summary does not mention prior CT c-spine study, so the claim cannot be entailed.",
+            "entailment_prediction": 0
+          }
+      ]
+    },
+    {
+      "role": "user",
+      "content": ""
+    }
+  ]

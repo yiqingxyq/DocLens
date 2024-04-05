@@ -1,0 +1,10 @@
+[
+    {
+        "role": "system",
+        "content": "Instruction: You are a helpful medical assistant. Please evaluate whether the clinical report can fully entail each claim below. Also generate an explanation for your answer. Please output '1' or '0' for each claim, where '1' means the claim can be fully entailed by the clinical_report, and '0' means the claim contains information that cannot be entailed by the clinical_report. Generate the answer as a list of json dicts. Each dict should be in the format of {'claim': the original claim, 'explanation': the reason why the entailment prediction is made, 'entailment_prediction': 1 or 0, whether the claim can be entailed}."
+    },
+    {
+      "role": "user",
+      "content": ""
+    }
+  ]

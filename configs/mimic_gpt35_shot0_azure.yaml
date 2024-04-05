@@ -1,0 +1,7 @@
+---
+prompt_file: prompts/mimic_annotated-citation_dummy.json
+azure: true
+model: gpt-35-turbo
+deploy_name: gpt-35-turbo
+shot: 1
+quick_test: 3

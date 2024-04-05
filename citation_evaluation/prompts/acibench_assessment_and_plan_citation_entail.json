@@ -1,0 +1,116 @@
+[
+  {
+      "role": "system",
+      "content": "Instruction: You are a helpful medical assistant. Below is a few conversational turns in the dialogue between the doctor and the patient and a sentence in the clinical note based on this dialogue. Please act as an impartial judge and evaluate whether the conversational turns can fully entail the sentence in the clinical note. Also generate an explanation for your prediction and the indices of the conversational turns that support your prediction. Please output '1' or '0', where '1' means the sentence in the note can be fully entailed by the conversational turns, and '0' means the sentence in the note contains information that cannot be entailed by the conversational turns. Generate the answer as a json dict in the format of {'explanation': the reason why the entailment prediction is made, 'provenance': the indices of the conversational turns that support your prediction, 'entailment_prediction': 1 or 0, whether the sentence in the note can be entailed}."
+  },
+  {
+    "role": "system",
+    "name": "example_user",
+    "content": {
+      "sentence_in_note": "After reviewing the patient's examination and radiographic findings today, I have had a lengthy discussion with the patient in regards to his current symptoms.",
+      "conversational_turns": [
+        {
+          "idx": "44", 
+          "speaker": "doctor",
+          "content": "okay alrighty so taking a look at your x-ray and you do have you you have a large spur there on the top of your big toe joint"
+        },
+        {
+          "idx": "45", 
+          "speaker": "patient",
+          "content": "oh"
+        },
+        {
+          "idx": "46", 
+          "speaker": "doctor",
+          "content": "and you've lost a lot of the cartilage"
+        },
+        {
+          "idx": "47", 
+          "speaker": "patient",
+          "content": "oh"
+        },
+        {
+          "idx": "48", 
+          "speaker": "doctor",
+          "content": "and so you you've got some arthritis in there we we call this hallux rigidus and treatment for this to start off with we we put an insert in your shoe called an orthotic and we give you a little bit of anti-inflammatory medication or like a drug called meloxicam you only have to take it once a day"
+        },
+        {
+          "idx": "49", 
+          "speaker": "patient",
+          "content": "okay"
+        },
+        {
+          "idx": "50", 
+          "speaker": "doctor",
+          "content": "it's usually pretty well tolerated have you ever had any trouble with your stomach"
+        },
+        {
+          "idx": "51", 
+          "speaker": "patient",
+          "content": "no never never had any problems with my stomach i love the i love the mexican's food the hotter the better so i hope i never get a problem with my stomach"
+        },
+        {
+          "idx": "52", 
+          "speaker": "doctor",
+          "content": "i hope you do n't either one of the things that we get concerned about with an anti-inflammatory like that is that it can irritate the stomach so if you do start to notice that you're getting heartburn or pain right there"
+        },
+        {
+          "idx": "53", 
+          "speaker": "patient",
+          "content": "yeah"
+        }
+      ]
+    }
+  },
+  {
+    "role": "system",
+    "name": "example_assistant",
+    "content": {
+      "explanation": "The provided conversational turns in the dialogue show that the doctor reviewed the patient's x-ray results, which belong to 'examination and radiographic findings'. The doctor also discussed the symptoms with the patient, such as spur on the big toe joint, loss of cartilage, and arthritis, which supports the sentence in the note.",
+      "provenance": [44,45,46,47,48,49,50,51,52,53],
+      "entailment_prediction": 1
+    }
+  },
+  {
+    "role": "system",
+    "name": "example_user",
+    "content": {
+      "sentence_in_note": "Hypertension: Encourage patient to take Lisinopril as directed, monitor and record blood pressures for one week, and discuss adding another agent if necessary.",
+      "conversational_turns": [
+        {
+          "idx": "41", 
+          "speaker": "doctor",
+          "content": "okay , all right . and then for your last problem your hypertension , you know , again i , i , i think it's out of control . but we'll see , i think , you know , i'd like to see you take the lisinopril as directed , okay ?"
+        },
+        {
+          "idx": "42", 
+          "speaker": "patient",
+          "content": "okay ."
+        },
+        {
+          "idx": "43", 
+          "speaker": "doctor",
+          "content": "uh , i want you to record your blood pressures within the patient , you know , take your blood pressure every day . record them to me for like , about a week , okay ? 'cause we need to get that under better control for your heart failure to be more successful , okay ?"
+        },
+        {
+          "idx": "44", 
+          "speaker": "patient",
+          "content": "okay ."
+        }
+      ]
+    }
+  },
+  {
+    "role": "system",
+    "name": "example_assistant",
+    "content": {
+      "explanation": "The doctor advised the patient to take lisinopril for her hypertension and record your blood pressures every day for about a week. However, the doctor did not mention anything about adding another agent, so the sentence in the note cannot be fully supported.",
+      "provenance": [41,43],
+      "entailment_prediction": 0
+    }
+  },
+  {
+    "role": "user",
+    "content": ""
+  }
+]

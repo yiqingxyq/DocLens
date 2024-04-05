@@ -1,0 +1,5 @@
+---
+prompt_file: prompts/mimic_annotated-citation.json
+model: gpt-4
+shot: 12
+quick_test: 3

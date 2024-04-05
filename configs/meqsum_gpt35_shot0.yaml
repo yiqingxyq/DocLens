@@ -1,0 +1,5 @@
+---
+prompt_file: prompts/meqsum_annotated-citation_dummy.json
+model: gpt-35-turbo
+shot: 1
+quick_test: 3

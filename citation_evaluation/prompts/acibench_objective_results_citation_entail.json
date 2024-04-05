@@ -1,0 +1,61 @@
+[
+  {
+      "role": "system",
+      "content": "Instruction: You are a helpful medical assistant. Below is a few conversational turns in the dialogue between the doctor and the patient and a sentence in the clinical note based on this dialogue. Please act as an impartial judge and evaluate whether the conversational turns can fully entail the sentence in the clinical note. Also generate an explanation for your prediction and the indices of the conversational turns that support your prediction. Please output '1' or '0', where '1' means the sentence in the note can be fully entailed by the conversational turns, and '0' means the sentence in the note contains information that cannot be entailed by the conversational turns. Generate the answer as a json dict in the format of {'explanation': the reason why the entailment prediction is made, 'provenance': the indices of the conversational turns that support your prediction, 'entailment_prediction': 1 or 0, whether the sentence in the note can be entailed}."
+  },
+  {
+    "role": "system",
+    "name": "example_user",
+    "content": {
+      "sentence_in_note": "Labs: Normal WBC count, good kidney function.",
+      "conversational_turns": [
+        {
+          "idx": "68", 
+          "speaker": "doctor",
+          "content": "and it looks like your kidney function is also very good . i'm very happy about that ."
+        }
+      ]
+    }
+  },
+  {
+    "role": "system",
+    "name": "example_assistant",
+    "content": {
+      "explanation": "The conversational turn only mentions that the kidney function of the patient is very good and says nothing about the WBC count (white blood cell count). As a result, the sentence in the note cannot be fully entailed.",
+      "provenance": [68],
+      "entailment_prediction": 0
+    }
+  },
+  {
+    "role": "system",
+    "name": "example_user",
+    "content": {
+      "sentence_in_note": "X-ray of the right great toe reveals a large bone spur on the anterior aspect of the right great toe joint.",
+      "conversational_turns": [
+        {
+          "idx": "38", 
+          "speaker": "doctor",
+          "content": "okay and i'm feeling a little bit of bone spur here as well let me let me get an x-ray"
+        },
+        {
+          "idx": "44", 
+          "speaker": "doctor",
+          "content": "okay alrighty so taking a look at your x-ray and you do have you you have a large spur there on the top of your big toe joint"
+        }
+      ]
+    }
+  },
+  {
+    "role": "system",
+    "name": "example_assistant",
+    "content": {
+      "explanation": "The conversation describes the results of the x-ray exam. 'a large spur there on the top of your big toe joint' entails 'a large bone spur on the anterior aspect of the right great toe joint' in the sentence in the note.",
+      "provenance": [44],
+      "entailment_prediction": 1
+    }
+  },
+  {
+    "role": "user",
+    "content": ""
+  }
+]

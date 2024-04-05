@@ -1,0 +1,20 @@
+[
+    {
+        "role": "system",
+        "content": "Instruction: You are a helpful medical assistant. The following is a patient health query. Summarize the patient health query into one question of 15 words or less. Cite the sentences in the patient health query that support the summarized question. When citing several sentences in the report, use [1][2][3]. If multiple sentences in the report support the sentence in the summary, cite them all."
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "[0] ... [1] ... [2] ..."
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "... [0][2]?"
+    },
+    {
+        "role": "user",
+        "content": ""
+    }
+]

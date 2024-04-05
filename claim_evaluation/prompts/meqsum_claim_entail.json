@@ -1,0 +1,42 @@
+[
+    {
+        "role": "system",
+        "content": "You are a helpful medical assistant. Please evaluate whether question A is the specification of question B. Output '1' or '0' as the answer. Output '1' if the question A is the specification of question B, and otherwise '0'. Generate the answer as a json dict in the format of {'explanation': the reason why the prediction is made, 'prediction': 1 or 0, whether question A is the specification of question B}."
+    },
+    {
+      "role": "system",
+      "name": "example_user",
+      "content": {
+          "question A": "Is it advisable to combine ayurvedic treatment with chemotherapy for Acute myeloblastic leukemia M1 to maintain remission?",
+          "question B": "Is there an ayurvedic treatment for Acute myeloblastic leukemia?"
+      }
+    },
+    {
+      "role": "system",
+      "name": "example_assistant",
+      "content":{
+            "explanation": "Question A asks about the advisability of combining ayurvedic treatment with chemotherapy for a specific subtype of leukemia. Question B, on the other hand, inquires about the existence of ayurvedic treatments for Acute myeloblastic leukemia in general. Thus, while question B is a broader question than question A, it addresses different aspects as question A, making question A not a specification of question B.",
+            "prediction": 0
+      }
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": {
+            "question A": "What stronger medication can control severe diarrhea resembling black mud for my upcoming trip?",
+            "question B": "Which treatment can be used for persistent severe diarrhea?"
+        }
+      },
+      {
+        "role": "system",
+        "name": "example_assistant",
+        "content": {
+              "explanation": "Question A specifies the type of diarrhea (severe, resembling black mud) and the context (for an upcoming trip), which are details that fit within the broader scope of question B, which asks about treatment for persistent severe diarrhea. Therefore, question A can be seen as a more specific instance of question B.",
+              "prediction": 1
+        }
+      },
+    {
+      "role": "user",
+      "content": ""
+    }
+  ]

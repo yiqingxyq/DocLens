@@ -1,0 +1,76 @@
+[
+    {
+        "role": "system",
+        "content": "Instruction: You are a helpful medical assistant. Below is a few conversational turns in the dialogue between the doctor and the patient and a sentence in the clinical note based on this dialogue. Please act as an impartial judge and evaluate whether the conversational turns can fully entail the sentence in the clinical note. Also generate an explanation for your prediction and the indices of the conversational turns that support your prediction. Please output '1' or '0', where '1' means the sentence in the note can be fully entailed by the conversational turns, and '0' means the sentence in the note contains information that cannot be entailed by the conversational turns. Generate the answer as a json dict in the format of {'explanation': the reason why the entailment prediction is made, 'provenance': the indices of the conversational turns that support your prediction, 'entailment_prediction': 1 or 0, whether the sentence in the note can be entailed}."
+    },
+    {
+      "role": "system",
+      "name": "example_user",
+      "content": {
+        "sentence_in_note": "Musculoskeletal: Bilateral knee pain, with right knee presenting with edema and erythema",
+        "conversational_turns": [
+          {
+            "idx": "64", 
+            "speaker": "doctor",
+            "content": "hey , dragon , show me the right knee x-ray . so here's the r- here's your right knee x-ray . this basically shows that there's good bony alignment . there's no acute fracture , which is not surprising , based on the history ."
+          }
+        ]
+      }
+    },
+    {
+      "role": "system",
+      "name": "example_assistant",
+      "content": {
+        "explanation": "The conversation mentions the right knee x-ray exam, but did not mention edema or erythema, so the sentence in the note cannot be entailed.",
+        "provenance": [64],
+        "entailment_prediction": 0
+      }
+    },
+    {
+      "role": "system",
+      "name": "example_user",
+      "content": {
+        "sentence_in_note": "Pain to palpation of the right great toe, between the big toe and 2nd toe.",
+        "conversational_turns": [
+          {
+            "idx": "30", 
+            "speaker": "doctor",
+            "content": "okay if i push in on your big toe and move it back and forth does that hurt"
+          },
+          {
+            "idx": "31", 
+            "speaker": "patient",
+            "content": "yes it does and it it's almost like those joints that when you push it back it's almost like it's grinding a little bit too"
+          },
+          {
+            "idx": "32", 
+            "speaker": "doctor",
+            "content": "okay if i push in between your big toe and your second toe here does that hurt"
+          },
+          {
+            "idx": "33", 
+            "speaker": "patient",
+            "content": "a little bit but not terrible"
+          },
+          {
+            "idx": "34", 
+            "speaker": "doctor",
+            "content": "okay and i'm feeling a little bit of bone spur here as well let me let me get an x-ray"
+          }
+        ]
+      }
+    },
+    {
+      "role": "system",
+      "name": "example_assistant",
+      "content": {
+        "explanation": "The patient felt hurt when the doctor pushed in on the big toe or pushed in between the big toe and the second toe, which entails the sentence in the note.",
+        "provenance": [30,31,32,33],
+        "entailment_prediction": 1
+      }
+    },
+    {
+      "role": "user",
+      "content": ""
+    }
+  ]

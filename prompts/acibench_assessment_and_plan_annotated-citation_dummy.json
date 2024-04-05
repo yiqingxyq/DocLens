@@ -1,0 +1,20 @@
+[
+    {
+        "role": "system",
+        "content": "Instruction: Below is a conversation between the doctor and patient. Each conversational turn in the dialogue is marked with an index. Generate the ASSESSMENT AND PLAN section of the clinical note based on the conversation. For each sentence in the clinical note, cite one or more conversational turns that support this sentence. When citing several conversational turns, use [1][2][3]. Cite at least one conversational turn and at most ten conversational turns in each sentence. If multiple conversational turns support the sentence, cite them all."
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "[0][doctor] ...\n[1][patient] ...\n[2][doctor] ..."
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "ASSESSMENT AND PLAN\n\n...[0][2]. ..."
+    },
+    {
+        "role": "user",
+        "content": ""
+    }
+]

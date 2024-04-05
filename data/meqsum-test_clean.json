@@ -1,0 +1,502 @@
+[
+    {
+        "input": "[0] 23 surgeries and counting......lower lip birthmark, have tried all options out the there and guess what still have it, continues to grow back.....any suggestions? [1] is there a cure coming in the next few years hopefully? ",
+        "reference": "How can i get rid of a lower lip birthmark permanently?",
+        "example_id": "96"
+    },
+    {
+        "input": "[0] i have chronic renal disease and worry that magnesium silicofluoride treatment of moth infestation of a large living room rug will be harmful to my health. [1] is this true? [2] if the rug is treated in house how long before any toxic fumes or skin contact would be a hazard. [3] appreciate any help you could provide. ",
+        "reference": "Is Magnesium Silicofluoride safe for people?",
+        "example_id": "98"
+    },
+    {
+        "input": "[0] i am not a nurse or dr or student... i am just a person with a question that i need an answer to. [1] could you please help me out and let me know if there is any research on the effect of rogam on the baby of the rh- person? [2] are there higher rates of mental illnesses in them or other health issues? [3] i would really appreciate any information. [4] thank you ",
+        "reference": "Could RhoGAM damage the baby?",
+        "example_id": "99"
+    },
+    {
+        "input": "[0] hydroxychloroquine for rheumatoid arthritis. [1] can you tell me if this medication that my doctor put me on could make me sweat profusely at the slightest little strenuous activity i'm also methotrexate 6 2.5mg once a week. [2] could you please email me back thank you very much ",
+        "reference": "Could hydroxychloroquine and methotrexate make me sweat? ",
+        "example_id": "101"
+    },
+    {
+        "input": "[0] gadolinum toxicity and mcs relationship? [1] i have 2 genovia labs test results years apart with seriously high gadolinum toxicity. [2] and i am very very very very challenged by mcs - multiple chemical sensitivity. [3] my question is: if i had multiple mars after an auto accident. [4] and since then the mcs is debilitating. [5] certainly the symptoms of gas level in my body cause symptoms as well. [6] but i am debilitated by synthetic chemicals in the air. [7] how can i find out if the gas exhaserbated my reaction to exhaust fumes, air fresheners, perfumes, dryer sheets(!!!! [8] ), food additives, and much more. [9] many thanks ",
+        "reference": "Is there a relationship between Gadolinium and Multiple Chemical Sensitivity?",
+        "example_id": "104"
+    },
+    {
+        "input": "[0] i have myclonus as well acute respiratory distress syndrome and sleep apnea with painful left temporal pain; i actually raise for sleep start holding my left temporal and saying, ouch!! [1] i experience in the same occurrence..all three hallucinations regarding wake sleep (audio tactile and visual). [2] i have expressed my concerns to numerous neurologist and they tell me it's functional. [3] should i be concerned? ",
+        "reference": "Should I be worried about wake sleep hallucinations?",
+        "example_id": "106"
+    },
+    {
+        "input": "[0] i an autoimmune disease and suffer with mcs. [1] recently i purchased a new combustion heater and went away for the first week while my friend burned it daily to allow the paint to cure. [2] however when i returned, each time i lit it, after 1/2 a hour this pungent toxic burning plastic smell filles the house causing my mouth to burn, a rash on my face, a whooshing sound in my ears. [3] i couldn't make a decision, had an urgency to defecate and then fight and flight panic affected so badly i had to leave my home. [4] i had the manufactures come to my home but the didn't wait long enough for the smell to start, there were more concerned with the function of the unit, no the toxic smell. [5] the did admit that the flu had not been correctly installed and they are going to rectify that however they assured me that the smell i described would not be coming from the fire. [6] so i tried it again and the smell reoccurred, this time i got a friend to come and help. [7] he suggested it might be the new vinyl flooring of gassing as the house heated up. [8] ( i had recently had a reno done. [9] my issue is that i need to identify what is making me ill so i can avoid it. [10] if it proves to be the floor i will get rid of it. [11] i cant live in my home under these conditions as this chemical effects me so much it makes me literally crazy. [12] i cant talk, i get confused, i cry then i panic and run. [13] this week the chemical messed with my head so badly i drove in the path of a truck? [14] lucky he has just started up and missed me. [15] i just sat in the car and cried. [16] i really really need the help of a specialist. [17] where do i go from here? [18] kindest regards ",
+        "reference": "How do I find out if the vinyl flooring or a heater make me sick? ",
+        "example_id": "107"
+    },
+    {
+        "input": "[0] hi to whom this may concern: i have a non alcoholic fatty liver and when i seen my consultant he say i don't have to see him again for 5 years and advised me to drink 3 cups of coffee a day, but i can't drink coffee at all, so i email a consultant asking if he new of a coffee tablet, so he email me back saying it properly glutathione-s-transferase enzymes in the coffee so am looking for a cheap tablet which contains.these enzymes to help repair my liver i also only have one kidney which am on long term antibiotics for i do hope you can help. [1] i look forward to your reply ",
+        "reference": "Where can I get glutathione supplements for my nonalcoholic fatty liver? ",
+        "example_id": "108"
+    },
+    {
+        "input": "[0] covid-19 how long to quarantine after being positive how long are you contagious if i tested positive for covid-19. [1] how long before i can safely return to work after a positive covid 19 test ",
+        "reference": "How long will I remain infectious after testing positive for COVID-19? ",
+        "example_id": "111"
+    },
+    {
+        "input": "[0] what/why do flu-like symtoms such as: hot/cold sweats, chills, diarrhea, nausea, vommiting, runny nose, for longer than 13 days or more? [1] could on-going stomach/flu symtoms that persist 13 days or more be something other than a bug or virus? ",
+        "reference": "What can cause flu-like symptoms lasting longer than 13 days?",
+        "example_id": "112"
+    },
+    {
+        "input": "[0] outbreak of red raise sores on back shoulder and arms from shoulder to wrist with raised bulbs of liquid. [1] treatment and maintenance ? ",
+        "reference": "How can i get rid of a blister rash on the back of my shoulders and arms?",
+        "example_id": "113"
+    },
+    {
+        "input": "[0] why does the united states have a high mortality rate of covid-19 than other countries ",
+        "reference": "Why is US COVID-19 mortality rate high?",
+        "example_id": "120"
+    },
+    {
+        "input": "[0] what are the effects when you take testosterone injections with sudafed 20 mg at the same time what\u2019s the effects ",
+        "reference": "Can I take testosterone injections and Sudafed at the same time?",
+        "example_id": "123"
+    },
+    {
+        "input": "[0] when to start anohter round of antibiotics? [1] how long can you wait to start a new dose of an antibiotic? ",
+        "reference": "How long should I wait between rounds of antibiotics?",
+        "example_id": "126"
+    },
+    {
+        "input": "[0] what are the possible side effects of not taking olanzapine after having tanker it for a long period of time ",
+        "reference": "Does olanzapine have withdrawal symptoms?",
+        "example_id": "135"
+    },
+    {
+        "input": "[0] if you exposed to two positive covid people an your results negative but you have symptoms what are state local cdc recommendations for quarantine ",
+        "reference": "What are the quarantine recommendations after being exposed to COVID-19, but testing negative?",
+        "example_id": "137"
+    },
+    {
+        "input": "[0] how do you know if you have sinus rhythm, what does it mean, is it good or bad? ",
+        "reference": "What does it mean to be in sinus rhythm?",
+        "example_id": "138"
+    },
+    {
+        "input": "[0] did anyone have this and does it require surgery? [1] my mri says forminal stenosis from bone spurs c4,5,6. [2] my nerve test shows severe nerve compression c7,8. [3] i\u2019m in so much pain, mostly my arm and shoulder and leg. [4] waiting to see the pain specialist to see what\u2019s next. [5] would love to know what you guys think is required.. ",
+        "reference": "How can I get rid of pain caused by foraminal stenosis and nerve compression?",
+        "example_id": "139"
+    },
+    {
+        "input": "[0] i thought i needed a knee repalcement but after having a stent placed in my heart my knee doesn't hurt what happened ",
+        "reference": "Can a heart stent alleviate knee pain?",
+        "example_id": "146"
+    },
+    {
+        "input": "[0] is there an increased risk of infiltration, dislodgement, or phlebitis in a stroke patient with a peripheral intravenous catheter insertion in the affected extremity? ",
+        "reference": "How high is the risk of complications of IV therapy?",
+        "example_id": "147"
+    },
+    {
+        "input": "[0] when you check your blood with the insulin meter what is a good number ",
+        "reference": "What is the normal range for insulin?",
+        "example_id": "149"
+    },
+    {
+        "input": "[0] scrotum swelling scarring from water retention what ointment, cream to treat ",
+        "reference": "What is the treatment for swollen and scarred scrotum? ",
+        "example_id": "150"
+    },
+    {
+        "input": "[0] 8 month old child suffering from constant vomiting what could be the medicine used for treatment ",
+        "reference": "What can I give my 8 month old for constant vomiting?",
+        "example_id": "154"
+    },
+    {
+        "input": "[0] what electrolyte do you need to watch when someone is on a water pill and what would be a good food source for this electrolyte? ",
+        "reference": "What electrolytes do I need if I am on a water pill?",
+        "example_id": "156"
+    },
+    {
+        "input": "[0] i am post menopause for about 18 years and i have been bleeding for about a month why ",
+        "reference": "What can cause postmenopausal bleeding?",
+        "example_id": "157"
+    },
+    {
+        "input": "[0] how to i get more information regarding the theraputics treatments that me be benificial. [1] my sister-in-law suffers from myofibroma and i am trying to empower myself with as much knowledge as possible. [2] i thank  you in advance for your help. ",
+        "reference": "What is the best treatment for myofibroma in adults?",
+        "example_id": "164"
+    },
+    {
+        "input": "[0] i had a left knee replacement - osteo arthritis and related to a sport injury. [1] i was assaulted and the replacement was damaged. [2] i had a second left knee replacement. [3] about 6 months later the knee started swelling up. [4] gp diagnosed it as gout, and treated it with gout medication. [5] these flare ups happened more and more  frequently and increased in severity, especially after having a left hip replacement. [6] gp twice treated with steriod (cortisone)injections. [7] before injecting the cortisone, the gp drained blood from the knee joint. [8] had relief but only for short period. [9] gp then referred me to orthopeadic surgeon again. [10] after x rays, ultra sound (which indicated that i had a bursar and baker\u2019s cyst as well as extensive fluid on the knee), nuclear (bone and gallium) tests, nothing showed up. [11] surgeon surmises that the plastic disc that forms part of the prothesis, may be breaking up in microscopic particles he suggested that i go for another operation and get a hinge prothesis i looked at a photo in the brochure, and noticed that there is also a plastic disc my question is therefore - if the current plastic disc is disintegrating, isn\u2019t the possibility that this will happen again? [12] it seems as if the body rejects the plastic disc. [13] at the moment i am using codalgin forte (500mg paracetamol and 30mg codeine) i am very reluctant to have the operation but also feel i can\u2019t go on like this as these flare ups can happen any time and compromises my day to day living. [14] during such a flare up i can\u2019t walk, sometimes for a couple of days. [15] i lie in bed with cold compresses on the knee! [16] i will appreciate any advice. ",
+        "reference": "What is the probability that a plastic disc in a hinged knee prosthesis will disintegrate?",
+        "example_id": "167"
+    },
+    {
+        "input": "[0] can ibs be cured with the patent medicines      say mebverine or others as prescribed the      doctor. [1] does probiotics are helpful in controlling       the ibs. [2] some says peeper mint can also be       suitable. [3] these are few general questions       as regards ibs and not personal. ",
+        "reference": "How to cure IBS?",
+        "example_id": "168"
+    },
+    {
+        "input": "[0] i have 6 months twin daughter. [1] m one daughter is ok but another one have blood less issue from start. [2] and she required bool every month. [3] after check . [4] of her, her mother and my. [5] result find out that. [6] my report is ok from thalassemia. [7] her mother have minor thalassemia . [8] and she (daughter) have no thalassemia but my daughter have anemia. [9] so doctor give her foli acid and mother milk. [10] but she still problem, now he sagest for bone marrow and maybe she have anemia.. so give me some guideline that what i do.... thank.. ",
+        "reference": "What are the best treatments for anemia in an infant?",
+        "example_id": "171"
+    },
+    {
+        "input": "[0] hai sir, we want suggestion to my wife. [1] she is sugar patient and she is pregnant. [2] in her uterus have two fibroid  of max size (750g and 300g). [3] doctors are suspecting pregnancy may be in uterus or tubes. [4] so remove uterus. [5] what is u r suggestion ",
+        "reference": "What are the recommendations for a diabetic with uterine fibroids and suspected ectopic pregnancy?",
+        "example_id": "172"
+    },
+    {
+        "input": "[0] few years ago (like 3yrs) my uncle faced a massive accident. [1] his back-bone broken, right leg anklet broken. [2] he treated his backbone from trauma centre. [3] some steel plates and screws added with his backbone and his backbone is now completely ok. the problem is now with his both leg. [4] from knee to leg finger-end is now completely senseless. [5] he can\u2019t feel anything like touching or byte of any mosquitoes or any insects. [6] both legs are now thinned too much from thigh starting point to the leg end. [7] he did some physio-therapy excercise but no improvement. [8] dr. said that nerve has teared in some place of leg. [9] now i want to know is there any therapy/treatment available to get rid of this kind of injury? [10] how it can be cured and where is the treatment available? [11] what kind of treatment is need to get cure? ",
+        "reference": "Is there a cure for nerve damage and loss of sensation in both legs after back surgery? ",
+        "example_id": "173"
+    },
+    {
+        "input": "[0] i have hypertension and have glaucoma and diverticulitis, i have developed allergies and am super sensitive to hypertension medication. [1] i have been given multiple medication and react to the medication within 24-48 hours suffering from major side effects and must stop the medication immediately. [2] do you have any information if there is a medication made for individuals that suffer from allergic reactions to the hypertension medication. ",
+        "reference": "What hypertension medications are least likely to cause allergies?",
+        "example_id": "177"
+    },
+    {
+        "input": "[0] my friend is interested in a girl for marriage who is with congenital ptosis, but none of her family members had previously. [1] would like to know the frequency that it could effect the children in future. ",
+        "reference": "How is congenital ptosis inherited?",
+        "example_id": "179"
+    },
+    {
+        "input": "[0] my daughter had brain surgery and has recovered much better than the surgeon expected. [1] my question is that since her surgery the flap has separated from her skull and there is a gap with just skin covering it. [2] please let me know if this is unsual. [3] she is very worried about it and says that it hurts. ",
+        "reference": "Should I be worried about a painful flap that separated from the skull after brain surgery?",
+        "example_id": "186"
+    },
+    {
+        "input": "[0] my son s 20 years old and last year he told us he had gid. [1] he never goes out except to work with me. [2] rarely will he go anywhere unless he has to. [3] i want to help my son find his life but i don\u2019t know how to help him. [4] i try to support him as best as i know how. [5] i have suggested support groups and so forth but he is not willing. [6] i fear for his mental health. [7] please tell me what i can do to help my son. [8] any groups, people i can contact that will help him with his gid, and that he can be able to somehow find a life for himself. [9] thanks ",
+        "reference": "How to help an adult with gender identity disorder (GID)?",
+        "example_id": "187"
+    },
+    {
+        "input": "[0] hi i am wondering what the chances are for ototoxicity and liver damage with the use of itraconazole. [1] in case these occur are the side effects reversible? [2] also what are the risks of congestive heart failure in a person taking this medication if patient has a family history significant for myocardial infarctions? [3] thank you for you time. ",
+        "reference": "What are contraindications and side effects of itraconazole?",
+        "example_id": "189"
+    },
+    {
+        "input": "[0] hello. [1] i have been a small eater my entire life, but always had difficulties eating. [2] i\u2019ve never looked at myself as having an eating disorder, but during the last year i came onto other thoughts when i went on a scale and saw a tiny bit of weight loss even when i felt i was eating more. [3] that was earlier this year. [4] for the last while i\u2019ve had extremely difficulties eating. [5] one meal a day is struggle enough. [6] i want to gain weight and i want to eat. [7] i\u2019m a size 8, but sometimes even that is slightly big. [8] i have never looked at myself as fat and always wanted to gain weight but never really had a desire to eat unless i\u2019m super hungry or feel like i need to eat to avoid passing out. [9] my stomach tells me to eat, but my brain informs me that i don\u2019t need food and therefore i don\u2019t eat. [10] at my worst i feel nauseous just the tought of eating. [11] i am super worried about this. [12] is there any vitamins or some sort of medication that can get me to eat even just a little bit more? [13] thanks. ",
+        "reference": "How to overcome aversion to eating and eat regularly?",
+        "example_id": "193"
+    },
+    {
+        "input": "[0] i have been tested twice and it has been determined that i have 2 copies of the gene for factor v, and i am concerned about my family. [1] if 1 parent has been diagnosed negative, is it even possible for me to have 2 copies of the gene without something being misdiagnosed? [2] i have 3 children and 8 grandchildren and would like to know if this should be called to their attention? [3] information will be appreciated. ",
+        "reference": "Should i be worried about my children if i have two copies of the gene for FACTOR V?",
+        "example_id": "196"
+    },
+    {
+        "input": "[0] our family will go to manila and thailand in december and january. [1] please recommend any vaccinations that we should have. [2] thanks!! [3] ! ",
+        "reference": "What vaccination is needed for travel to the Philippines and Thailand?",
+        "example_id": "198"
+    },
+    {
+        "input": "[0] hello \u2013  do you know if there are blood or urine tests that can detect if an individual is taking flomax?? [1] your assistance is appreciated. [2] thank you ",
+        "reference": "Can blood or urine tests detect Flomax use?",
+        "example_id": "199"
+    },
+    {
+        "input": "[0] my boyriend was taking tasigna and i became pregnant i want to know what kind of birth defects can it cause to my unborn child. ",
+        "reference": "If the father is on tasigna will the baby have birth defects?",
+        "example_id": "200"
+    },
+    {
+        "input": "[0] my grandson now 3yr6mo.dx at abt 9mons w/pehh and ger and bad reflux. [1] surgery finally done and nissen has been in place ever since. [2] glad my daughter n son in law r both nurses. [3] behaviors entrenched from reflux discomfort --misery. [4] his hand grip worries me, therapy in place for that. [5] visiting over christmas i\u2019m scared of disrupting his detailed feeding protocol. [6] he\u2019s finally on the wt. [7] charts. [8] so rare, lay people say: let him get hungry and he\u2019ll eat. [9] that\u2019s so cruel it makes be angry so i don\u2019t talk. [10] any info on what grama can do to ease my daughter\u2019s workload. [11] read more abt? [12] intimidating. ",
+        "reference": "How can i help caring for a child after Nissen anti-reflux surgery?",
+        "example_id": "201"
+    },
+    {
+        "input": "[0] is it safe to take relora if i seizure disorder? [1] i had a cavernoma removed from my brain that my drs believe caused me to have a seizure. [2] i am now taking keppra for seizure prevention. [3] i would like to take relora to combat the anxiety and to lift my mood. [4] it seems no drs know much about supplements. ",
+        "reference": "What plant extracts are safe to take with Keppra? ",
+        "example_id": "208"
+    },
+    {
+        "input": "[0] i\u2019m 30 years old and when i was 23 my period wasnt coming every month, and i still don\u2019t get my period , last time i got it was 4 months ago and i\u2019m really worried. ",
+        "reference": "What causes irregular periods in young women?",
+        "example_id": "209"
+    },
+    {
+        "input": "[0] i am 28 height 170 cm ,58 kg tropical area living.my eyes are infected when i watch to a plain surface i can see something moving like a narrow tubes before my eyes.it seems partially burned like half burned worms and i am also seeing something glittering in front of my eyes i checked aso it is 230 (normal value is 200)i am lean and no increase in body weight for the last 8 years. [1] how can you help me ",
+        "reference": "Could eye floaters and flashes be caused by strep?",
+        "example_id": "214"
+    },
+    {
+        "input": "[0] hi   i have nystagmus plm last 3 years  i want to know that any possibility to resolved my plm thanks tell me the right medicine i need your help ",
+        "reference": "How can nystagmus be resolved in adults?",
+        "example_id": "216"
+    },
+    {
+        "input": "[0] i have a detached cruciate ligament in my left knee. [1] if i submit to reconstruction surgery, how long will recovery take? [2] because of my age (over 90) i need to remain as physically active as possible. [3] i live alone. [4] my injury occured several years ago, but only recently has been causing me major discomfort. ",
+        "reference": "Is knee surgery recommended for detached cruciate ligament in a 90-year-old?",
+        "example_id": "218"
+    },
+    {
+        "input": "[0] i have a patchy skin and it has become very dull these days and also i find few rash\\pimples on my face. [1] could you please suggest me the food tha i have to take to increase my complexion and get rid of this dullness and rash\\pimples. ",
+        "reference": "What foods help clear skin?",
+        "example_id": "221"
+    },
+    {
+        "input": "[0] i had surgery in 2011. i had an injury from a gunshot and the doctors put a stent in my carotid artery. [1] i want to play sports. [2] i am sure basketball is fine. [3] i do not know about football since it is mainly a contact sport. [4] has anyone ever played football witha a stent in their neck ? [5] i know there are some details i should note before furthering my want of playing sports. ",
+        "reference": "What sports can I play if I have a stent in carotid artery?",
+        "example_id": "222"
+    },
+    {
+        "input": "[0] my mother passed away sunday from sepsis-bowel perforation and i needed to know what it is. [1] she wasn\u2019t sick till the night before after she ate supper. [2] she said her stomace was hurting. [3] she feel the next moning and hit her head. [4] she was ice cold with alittle sweat on her neck. [5] please, explain this to me. ",
+        "reference": "Why did my mother die from a Sepsis-Bowel Perforation and falling and hitting her head?",
+        "example_id": "223"
+    },
+    {
+        "input": "[0] i need parent training. [1] my 9 year old son has odd and adhd. [2] i\u2019m in desperate need of an extensive parent training class. [3] i don\u2019t know what to do anymore and really need help. [4] my son says i do nothing for him after spending the entire day taking him places. [5] he yells and screams at me and tells me i\u2019m a terrible mother. [6] he refuses to listen and i have to ask 10 times before he reacts. [7] he will not do homework..  i have tried positive reinforcement\u2026\u2026 please i need someone that know their stuff.. ",
+        "reference": "Who can train a parent of a 9-year-old with ODD and ADHD?",
+        "example_id": "224"
+    },
+    {
+        "input": "[0] three weeks ago i saw the local doctor lady.. she listened to my description of abdominal pain down the left groin area. [1] now the pain is occasionally not nice and there is a swelling which is uncomfortable to touch when i have the pain . [2] the swelling is soft like a liquid pouch. [3] i have undergon prostrate cancer radiotherapy which resulted in occasional mucus and blood discharge when passing stool and wind. [4] this mucky bum has settled down and for some months i have not had any accidents (soiled pants). [5] the doctors letter said ii had a friable back passage which bled on contact. [6] i am due for colonoscopy. [7] what should i do? [8] is it dangerous to undergo the colonoscopy with a friable weakened colon . [9] i  am 68 year old white male. [10] 6ft 4  tall 84 kg. [11] reasonably fit and active. ",
+        "reference": "is it dangerous to undergo colonoscopy with a friable weakened colon?",
+        "example_id": "225"
+    },
+    {
+        "input": "[0] is sedation or some form of twilight sleep or something for relaxation normally used for pill capsule camera for gi issues test? [1] i have difficulty swallowing large pills and do not think i can do this awake. [2] my mother and sister have to have their esphophgus stretched so i could possibly have some genetic factors. [3] i am very scared of choking with this test. [4] what is the normal procedure and do you have any suggestions? [5] thanks ",
+        "reference": "Can i get sedated for capsule endoscopy?",
+        "example_id": "229"
+    },
+    {
+        "input": "[0] i am seeking information regarding wandering/lazy eye correction. [1] i have suffered from this condition since i was a child. [2] please forward any pertinent information. [3] thank you. ",
+        "reference": "Is it possible to fix wandering/lazy eye in adults?",
+        "example_id": "233"
+    },
+    {
+        "input": "[0] hello doctor  my frnd is suffered with  chronic myelogenous leukemia (cml) (age 47)..she is treated with a medicine  called gleevec since 4 months ..doctor said took blood test for every week ..the problem is  platelet count rapidly decreased week by week ...last blood report shows platelet count as 90000,now her count droped to 750000..what should we do...plz help me.. ",
+        "reference": "Should Gleevec be adjusted for my friend with chronic myelogenous leukemia (cml) whose platelet count is decreasing? ",
+        "example_id": "236"
+    },
+    {
+        "input": "[0] i have a problem. [1] i am not remember my study always forget .i am not consntrate on study. [2] when i am reading i am thinking any others topic. [3] i am confused is this a alhizmer.i think i am loss my memory .please help me and suggest me. ",
+        "reference": "How can I concentrate and avoid forgetting what i study? ",
+        "example_id": "237"
+    },
+    {
+        "input": "[0] recently my son took an eye examine and  he had 20/40 in one eye and 20/25 in the other would he need glasses? [1] then when they continue the eye examine they said the fundus could not be visualized in either eye. [2] i just want some understanding on both situations. ",
+        "reference": "Does a child with 20/40 vision need glasses? Why would fundus not be visualized? ",
+        "example_id": "240"
+    },
+    {
+        "input": "[0] good morning, i'm not sure where to start with this so am hoping you could point me in the right direction please? [1] my husband recently saw a specialist in relation to his elbow. [2] he was told he would need an elbow reconstruction. [3] the specialist mentioned that someone in the us had made something to fix this problem but even though it was patented, it didn't sell so it is now not made anymore. [4] would you know what this was and called, and who i could get in contact with about it please? [5] we live in  australia. [6] my husband is a keen sportsman and is not taking this news very well as he's been told he won't be able to play sport again. [7] any help would be greatly appreciated. ",
+        "reference": "Are there any elbow replacements that completely restore elbow function? ",
+        "example_id": "241"
+    },
+    {
+        "input": "[0] i have been suffering from digestive problems for 30 years. [1] it has recently flared up bad and i am looking for ideas to try to heal. [2] i was diagnosed with ibs at 13.   i was curious about the servings in the c-ibs formulation. [3] how's much of each in mgs? [4] how many times a day? [5] i want to take a more holistic approach as i'm going to be 42 and i am tired of suffering and the side effects of my anti nausea meds that left me with an eye tic. [6] if any information can be given i would be greatly appreciative. ",
+        "reference": "What is in the C-IBS formula and how should it be used? How do you treat IBS naturally?",
+        "example_id": "242"
+    },
+    {
+        "input": "[0] someone i know discovered she had tb in the past (unknowingly). [1] i don\u2019t know if she had tb disease or a tb infection. [2] she believes she caught it from her aunt who worked as a dietician at a tb sanitarium. [3] the aunt did not have tb. [4] is this even possible? [5] thanks very much. ",
+        "reference": "Can tuberculosis spread without direct contact? ",
+        "example_id": "243"
+    },
+    {
+        "input": "[0] i have heard about m.m.s. [1] can it help with barr syndrome/crohns i know about supplements but need more for the hands /feet muscles an diaphragm muscles, using only small dosage of the myatoxin only let's the body build defense to the paralyzed muscles so any information on both m. m. s. ,sodium chloride/citric acid healing curing, everything, to govern. [2] clinical trials for people suffering severe muscle problems in hands. [3] feet lungs ",
+        "reference": "What is the best treatment for severe muscle problems caused by Guillain Barre Syndrome? Does Miracle Mineral Solution (MMS) help with Barre syndrome/Crohn's?",
+        "example_id": "244"
+    },
+    {
+        "input": "[0] i ask the home health aide to give me an enema. [1] the home health aide has never given an enema. [2] what should the home health aide do? [3] i have not had a bowel movement in three days ",
+        "reference": "How to administer an enema?",
+        "example_id": "245"
+    },
+    {
+        "input": "[0] hello, my sister suffers from obsessive-compulsive disorder for more than ten years and i want to know why the symptoms of obsessive-compulsive disorder increase during the menstrual period for this she is  very afraid and use contraceptive pills a monthly to prevent the menstrual cycle and is used this way since 5 years the first question is why the symptoms of obsessive-compulsive disorder increase during menstruation? [1] the second question are there any side effects as a result of the use of pills a month? [2] i hope to help me found the answers because her conditions is very bad and please told me what we can do to help her. [3] thank you very much and thank you for your time. ",
+        "reference": "Do symptoms of obsessive-compulsive disorder increase during menstruation? What are the dangers of extended continuous use of contraceptive pills?",
+        "example_id": "246"
+    },
+    {
+        "input": "[0] can i get my acid reflux surgery clipped to get lap band or would you suggest the sleeve or gastric bypass instead. [1] what are possible complications if i get my acid reflux surgury clipped to get lap band? [2] thanks! ",
+        "reference": "What is the best surgery for acid reflux? What complications could I have after acid reflux surgery?",
+        "example_id": "247"
+    },
+    {
+        "input": "[0] hi, can malarone turn  your tongue black? [1] if so, do u know why? [2] and how to fix? [3] thx ",
+        "reference": "What causes the tongue to turn black and how to get rid of it? What are the side effects of Malarone?",
+        "example_id": "248"
+    },
+    {
+        "input": "[0] co q10 how effective and side effects for blood pressure treatment? [1] cider vinegar? ",
+        "reference": "Can coQ10 lower blood pressure and does it have side effects? Can Cider vinegar lower blood pressure and does it have side effects? ",
+        "example_id": "249"
+    },
+    {
+        "input": "[0] a 65 year old female friend of mine was just recently diagnosed with frontotemporal dementia - temporal variant. [1] she is devastated. [2] i am trying to help her find resources, clinical trials, etc. [3] to help her. [4] can you give me some names of doctors to contact, pertinent institutions to contact regarding the treatment of this disease. [5] thank you. ",
+        "reference": "Are there any clinical trials and other resources for a 65 year old female with Frontotemporal dementia?",
+        "example_id": "250"
+    },
+    {
+        "input": "[0] lewy body disease. [1] i have been researching lewy body disease and have a few questions.1) is this disease hereditary2) does alcoholism play a role in the beginning process of this disease3) what are the initial symptoms of the diseaseany information you could forward would be greatly appreciated. ",
+        "reference": "What are the risk factors, causes and early symptoms of the Lewy Body Disease?",
+        "example_id": "257"
+    },
+    {
+        "input": "[0] my father is having cardiomyopathy through genes. [1] he is 83 now. [2] he was absoulutely normal till now. [3] recently he is getting breathlessness. [4] and he was admitted to the hospital twice. [5] the doctors are telling that multi dieases are attacking his heart. [6] i just want to know exactly what is happening and what precautions that he should take in future. [7] what are the chances of survival? [8] please help. ",
+        "reference": "what is the outlook for a 83 year old with cardiomyopathy?",
+        "example_id": "258"
+    },
+    {
+        "input": "[0] herpes. [1] would it be possible to acquire herpes (1 or 2) in a less painful location such as the arm or leg, and thereby gain immunity to further infection genitally or orally? [2] as such would dental pros who have acquired the virus in their hands be immune to further contraction of the virus? ",
+        "reference": "How can herpes be prevented?",
+        "example_id": "259"
+    },
+    {
+        "input": "[0] subject: recovery from erb's palsy. [1] message: for a baby with an erb's palsy, what is the recommended age at which the infant can be a subject to nerve conduction test? [2] what is it for surgical treatment? [3] is their an alternative methodolgy for nerve test other than electrical pulses? [4] where is this provided in the u.s? ",
+        "reference": "when is the best time for surgical treatment for an infant with Erb's Palsy?",
+        "example_id": "260"
+    },
+    {
+        "input": "[0] subject: clinicaltrials.gov - suggestion. [1] message: hello my name is  [name]  and i am a 32  yr old female that has sever problems with abdominal adhesions. [2] i have had several surgeries do to pain and complications. [3] now i have been vomiting for a year now everytime i eat. [4] i have had several tests done. [5] nothing obvious shows which leads the dr in springfield illinois to believe it's scar tissue pushing on my stomach wall and causing me to expel my food within 30 min of eating. [6] i started out at over 235 pounds and am bouncing around 150-170 now. [7] i am in severe pain. [8] i am tired of living off pain medicine. [9] i need help!!!!! [10] please please please!!!! [11] it all started when i had c-section for [phi] in 2003. i have had to have per 6 abd surgeries since with the last one in 20012 total hystorectomy . [12] i did well for about a year. [13] and now back to square one just with new problems. [14] i do not want to have surgery to just remove the tissue again. [15] although it will give me great relief it will cause more. [16] i need something to help inhibit the growth of tissue. [17] can anyone help me?? [18] i am very desperate!! [19] i am tired of not being there for [phi]. [20] in so much pain!! [21] pain meds are hit and miss on helping and i just hate taking them. [22] i am looking into  essential oils to help with my symptoms. [23] it is a living hell! [24] my e-mail is [contact] please contact me if you can help. [25] only serious material please. ",
+        "reference": "Is there a way to reduce and prevent internal scarring and adhesions after abdominal surgery ot dissolve adhesions without sugery? ",
+        "example_id": "261"
+    },
+    {
+        "input": "[0] subject: don't know what to do about keeping dressing on my 17 month olds stitches. [1] message: i have a 17 month old that had stitches on his left index finger and he wont keep on the dressing / bandage. [2] please help me to figure out what to do. ",
+        "reference": "What kind of dressing can I use instead of bandages for a toddler?",
+        "example_id": "264"
+    },
+    {
+        "input": "[0] subject: mitral valve regurgitation. [1] message: hi, i am writing on behalf of my dad. [2] he is 65 and he is diagnosed with rheumatic mitral valve regurgitation 8 years ago. [3] 3 years ago he also diagnosed with heart failure. [4] currently he has been using coumadin, beta blocker, diuretics, ace inhibitor, as a medicine and as suppliments omega3,6,9 fish oil, co-enzyme q10, vitamin c, k2, ginco biloba, magnesium citrate using daily. [5] i would appreciate if you can help us with some of the symptoms my dad is experiencing. [6] feeling sick in the morning and trowing up before and after breakfast, feeling tired all the time, struggling to walk to the first floor without resting. [7] he has low blood pressure (like 5 - 7), [phi]. [8] we are very worried about my dad. [9] could you please suggest us if we are using wrong medication or we are supposed to use any more or less medication or supplements. [10] please please please help us i am very scared if something happens to my dad. [11] i look forward to hearing from you [name] ",
+        "reference": "What could cause fatigue, vomiting and low blood pressure in a 65 year old man with history of heart disease who is taking coumadin, beta-blockers, diuretics, ACE inhibitors and supplements? ",
+        "example_id": "265"
+    },
+    {
+        "input": "[0] subject: vomiting blood and blood clots, ( pulmonary embolisms). [1] message: is it possible to vomit blood, with abdominal pain, fatigue that caused them to sleep two days, left sided chest pain ( left upper ribcage area), and suffer from bilateral pulmonary embolism with left lower lobe infarction four weeks later? [2] the blood was bright red, about one cup. ",
+        "reference": "Is there a connection between chest pain with vomiting blood and a pulmonary embolism with lung infarction four weeks later?",
+        "example_id": "267"
+    },
+    {
+        "input": "[0] fire burn gives stain at stomach during my childhood and that is directly surrounded around the stomach button. [1] and this matter was occurred past 15 years back. [2] do there is any therapy or remedy? ",
+        "reference": "can an old burn mark be removed from the stomach?",
+        "example_id": "268"
+    },
+    {
+        "input": "[0] subject: torch  infection. [1] message: i have torch infection in my body please suggest me. [2] what can i do..  my first baby was very injured..two big hole in heart  and  no wolv,  now my baby no more.. plz suggest me ... if i will pregnant and it's sure my baby will b born healthy ? ",
+        "reference": "How can a woman with torch infection have a normal baby?",
+        "example_id": "269"
+    },
+    {
+        "input": "[0] subject: mri versus ct scan for tbi/consciousness/s100b. [1] message: for adult patients:  following a tbi what is considered most  conclusive for damage: mri, mri with contrast, ct, ct with contrast. [2] also, do you think whether a person losses consiousness is given too much credence for evaluating a tbi? [3] how long is a s100b able to detect damage following a tbi? [4] do you yhink this is a valid test for e.d. [5] immediately following injury? [6] if so, why is it not done, ignorance or expense? [7] could a patient demand it be drawn? [8] thank you ",
+        "reference": "What are the most reliable tests for diagnosing TBI?",
+        "example_id": "270"
+    },
+    {
+        "input": "[0] subject: low potassium. [1] message: i have been taking melitonion to help me sleep. [2] my pc has prescribed 20 meq of potassium for low potassium level. [3] he has since increased it to 40 meq as my potassium level is still under the normal levels. [4] should i stop taking the melitonin to help me get to sleep at night. ",
+        "reference": "Should I stop taking melatonin if I am taking potassium?",
+        "example_id": "273"
+    },
+    {
+        "input": "[0] subject: mmr second dosage by mistake. [1] message: my daughter got the mmr vaccination at 1 year old, then she got a second dosage by mistake after two weeks froim the first one. [2] is this dangerous to her> is there anything i can do? ",
+        "reference": "Are extra doses of MMR vaccine harmful to infants?",
+        "example_id": "276"
+    },
+    {
+        "input": "[0] subject: time of results. [1] message: when a person start halt sildenafil...how long before their breathing, shortness of breath, &fatigue issues go back to normal..? ",
+        "reference": "How long do sildenafil side effects last?",
+        "example_id": "278"
+    },
+    {
+        "input": "[0] subject: carbon dioxide. [1] message: what can happen if your level of carbon dioxide in your blood is up to 50? [2] what things can starting changing in your body if it reaches over 50. ",
+        "reference": "How do incresing  levels of carbon dioxide affect the human body?",
+        "example_id": "279"
+    },
+    {
+        "input": "[0] subject: alpha 1 normal ranges. [1] message: hi i was wondering if you could help me. [2] i am a student in which i have to complete a case study on a patient with severe copd. [3] the patient's alpha 1 ant-trips sin level is 1.33. i am aware the normal ranges is 0.075-0.15g/l. [4] does this mean this patient has the genetic disease? [5] thanking you [name] ",
+        "reference": "Are high levels of Alpha-1 Antitrypsin related to COPD or genetic disorders?",
+        "example_id": "280"
+    },
+    {
+        "input": "[0] subject: streched or torn tendons/ left leg. [1] message: i have torn or streched tendons in my wrist,or ankle,before.the one incident ended up having to be corrected through an op.the cartilegde known as discus triangulares grew back wrong and the scarred tissue,pushed on a nerve,causing my hand and arm to go numb. [2] my question concerns a fall i had about 5 weeks ago.in this fall,i hurt my left wrist,and leg,my wrist took about 3 weeks to heal up,and no longer bothers me.my left leg,however,is still bothering me.is it possible that i tore something that is pinching a nerve in my leg? [3] ?while standing,for prolonged intervals my upper thigh tingles,as if my leg has gone to sleep.the front and side of my thigh are tender to touch,(as if i burnt myself badly,or someone hit me with something real hard. [4] )the original pain i had,was in the back of my knee.i know that a tendon takes 8 weeks or more to heal,it has now been almost 6 weeks. ",
+        "reference": "Why is my thigh hurting and getting numb six weeks after a fall?",
+        "example_id": "287"
+    },
+    {
+        "input": "[0] subject: intestinal obstruction without surgery. [1] message: from our family, 35 years old female patient has been diagnosed adenocarcinoma with multiple metastases all over abdomen along with pancreatic tail bulky. [2] ovary and uteruses has been removed. [3] patient has received two cycles of chemotherapy presently at 3rd stage and is admitted with intestinal obstruction pancreas. [4] please suggest for intestinal obstruction without surgery. [5] please reply urgently. ",
+        "reference": "Are there any non-surgical treatments for intestinal obstruction in a patient with metastatic cancer?",
+        "example_id": "289"
+    },
+    {
+        "input": "[0] message: i have been dignosed bladder cancer and in [date] surgery radical cystoprostatectomy with bilateral plnd under ea/ga was done.i would like to know if the stoma closure is possible? [1] request to please guide me. ",
+        "reference": "Can stoma be closed after radical cystectomy?",
+        "example_id": "290"
+    },
+    {
+        "input": "[0] i have been diagnosed with bipolar and fibromialgia and have been told i cannot take lyrica with having been put on medication for bipolar as well as the issue with side affects. [1] is this true? ",
+        "reference": "What drugs should not be taken with lyrica?",
+        "example_id": "291"
+    },
+    {
+        "input": "[0] subject: lithtrypsy complications. [1] message: lithotripsy performed 1986, [location], [name] hostile &defensive that it caused pmr &giant cell arteritis. [2] onset of autoimmune disease between 4 &8 hrs. [3] later. [4] never worked again (head &neck surgeon). [5] still battling hypertension, arteritis, inflammatory myositis (biopsy usc, [name]). [6] most drs. [7] know squat about autoimmune diseases &the trigger. [8] your info only ",
+        "reference": "Can lithotripsy cause autoimmune disease?",
+        "example_id": "292"
+    },
+    {
+        "input": "[0] subject: clinicaltrials.gov - question - general information. [1] message: i have a question about lofexidine. [2] do you have to be on suboxone and orbuprenorphine to use it and is it approved in the [location] yet? ",
+        "reference": "Is lofexidine prescribed only in combination with suboxone or buprenorphine?",
+        "example_id": "293"
+    },
+    {
+        "input": "[0] subject: raynauds syndrome. [1] message: my sons middle toe turned white after being in his dorm for a few hours without heat. [2] we were wondering why all his toes did not change colors. ",
+        "reference": "What can cause one toe turn white after spending time in an unheated room?",
+        "example_id": "299"
+    },
+    {
+        "input": "[0] subject: setraline side effects. [1] message: hi, i am writing because i have been diagnosed with depression and have been treated with several different medications because of a serious side effect i get with sertraline. [2] they have given me a small dosage, 25mg a day,  i have tried with celexa, prestiq, paxil, cymbalta and they all make my legs shaky. [3] i get weak in my legs and i get a tingling sensation. [4] my legs hurt and get a tingling sensastion. [5] why do i get this side effect? [6] is there something else i can take?? [7] i was also wondering if it has to do with any other medications that i take. [8] sometimes i take dormicum for sleeping problems and lorazepan. [9] eagerly waiting for your comments ",
+        "reference": "What antidepressants are not likely to interact with lorazepam and cause weakness and tingling in my legs?",
+        "example_id": "301"
+    },
+    {
+        "input": "[0] subject: factor vii. [1] message: i have glanzmans thrombastinia which is a rare platelet disorder. [2] i am concerned about invasive emergency surgery. [3] i have had minor surgeries and have bled profusely-even with pre-op meds of ddavp and amicar.. i understand factor vii (or a drug to reduce or stop unnessary bleeding,if administered prior to surgery can alleviate bleeding problems in an invasive procedure. [4] what drug(s) would you recommend and how readily available is the drug and how much does it cost. [5] thank you, e. w. [name] ",
+        "reference": "What drugs are used to stop bleeding during surgery?",
+        "example_id": "313"
+    },
+    {
+        "input": "[0] subject: gluten inquiry. [1] message: my medication has been replaced due to discontinued of my prior manufacture. [2] i am wanting a response and definite answer if your corporation can give a statement in easing my thoughts on gluten free. [3] i take the esterified estrogens, methyltestosterone full strength dark green table with 1490 labeled on it, i have looked up the ingredients and found an ingredient that shows gluten related. [4] can you please secure my worries and confirm if this medication is gluten free or if it does contain gluten. [5] thank you, r ",
+        "reference": "Does Esterified Estrogens, Methyltestosterone contain gluten?",
+        "example_id": "316"
+    },
+    {
+        "input": "[0] subject: small head. [1] message: i am [name], 17 years old girl my head size is small then average. [2] enough small that everybody can  notice. [3] my question is that wall it grow to average. [4] or i have to face this throughout my life ",
+        "reference": "Will a disproportionately small head in a 17 year old grow to normal size?",
+        "example_id": "317"
+    },
+    {
+        "input": "[0] loss of ability to taste and smell due to surgery that acut olifactory nerve. [1] can you recommend a group  to help a patient who has lost ability to taste and small, and who is profoundly depressed, has lost enormous amount of weight, has no interest in food and is virtually not eating, has no energy and i am afraid he will die of starvation if he does not get some help. [2] the various doctors involved are not helping. [3] he needs to think of food as medicine. [4] he must eat but hardly does. [5] have you any suggestions. ",
+        "reference": "Are there support groups for people who are depressed due to loss of senses of smell and taste? ",
+        "example_id": "318"
+    },
+    {
+        "input": "[0] subject: thick blood. [1] message: when i was young, my hct and hgb were low normal. [2] now that i am 68, my hct is high normal and my hgb is high (18). [3] why/how has my blood thickened as i aged? [4] what can i do to thin my blood? ",
+        "reference": "What causes the blood thicken with age and what are the treatments?",
+        "example_id": "319"
+    },
+    {
+        "input": "[0] message: dear doctor i am 22 years old stident from bhutan , presently studying in india. [1] how ong does it take to develope a tseticular cancer? [2] is this curable? [3] can i have a baby in future? [4] ll this ffect my fertility after the treatment? ",
+        "reference": "What are the course, treatment and outlook for testicular cancer?",
+        "example_id": "320"
+    },
+    {
+        "input": "[0] subject: fever. [1] message: i have had a fever in the evenings only since {date], it is gone in the morning then resurfaces around 4pm. [2] i babysit for my grandkids during the week, i went to the clinic and they just said it was a cold. [3] lung are fine, no head congestion. [4] so i would like to know if i am contagious to my grandkids, so i can start sitting again. ",
+        "reference": "Is a cold without congestion contagious?",
+        "example_id": "323"
+    },
+    {
+        "input": "[0] subject: breathlessness. [1] message: i am 77  , nown case of dibetes 2 & bp both under control with medication viz amryl m -1mg ( sanofi) twice a day & benitech a for bp .hba1c being around 5.8-6.2 , sugar fasting around 80-90 , but pp is above 175 to 225, bp is normal 140/75,pulse 50-64.however amylase & lipase are around 150. my tmt and ultrasound abdomon are normal , chest x ray is clear i am 5'6\" , wt -70kg , girth at navel 40\" these days i am feeling problem of breathlessness, even on slight exertion , i can walk but only at a very slow pace. [2] pl. [3] advise can it be on account of any problem with my lungs pl & symptoms/tests for same  these days ",
+        "reference": "What causes shortness of breath on light exertion? ",
+        "example_id": "334"
+    },
+    {
+        "input": "[0] subject: loss of sense of taste. [1] message: i have not been able to taste most foods for over a year ( i am 54 and in good health for the most part, i do not have a loos of sense of taste and do not have gum disease.) [2] either due to using a vaperizor where the fluid leaked and got on my throat or where my smoking did. [3] i am also hypothyroid classified with hashimots's. [4] i am at my breaking point and need something medically to fix this. [5] is there such a medicine? [6] no one will help me it seems. [7] thanks, [name] ",
+        "reference": "Could loss of taste be restore in a smoker with Hashimoto's disease? ",
+        "example_id": "345"
+    }
+]

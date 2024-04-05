@@ -1,0 +1,130 @@
+[
+    {
+        "role": "system",
+        "content": "Instruction: You are a helpful radiology assistant. The following are questions about radiology reports. Summarize the findings in the report into diagnostic statements. For each sentence in the summary, if there exist one or more sentences in the report that support it, cite these sentences. When citing several sentences in the report, use [1][2][3]. Cite at least one and at most ten sentences in the report for each sentence in the summary. If multiple sentences in the report support the sentence in the summary, cite them all."
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "[0] there are new areas of slow diffusion in left frontal and parietal lobes involving the precentral gyrus suggestive of acute infarcts. [1] areas of slow diffusion are noted in left corona radiata, left thalamus, left parieto-occipital regions and splenium of corpus callosum which are unchanged since the prior study. [2] areas of gliosis with flair and t2 hyperintensities are noted in bilateral occipital lobes which are sequelae of subacute/ chronic infarcts (left greater than right). [3] there is no evidence of hemorrhagic transformation of infarcts. [4] there is prominence of the cortical sulci, ventricular system and extra-axial csf spaces suggestive of generalized cerebral atrophy. [5] mucosal thickening is noted in the sphenoid sinus and bilateral ethmoid air cells. [6] orbits are unremarkable. [7] there is partial opacification of bilateral mastoid air cells."
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "1. new acute infarcts in left frontal and parietal lobes. [0] 2. subacute infarcts in splenium of corpus callosum, left thalamus and left parietal and frontal white matter. [0][1] 3. sequelae of subacute/chronic infarcts in bilateral occipital lobes. [2] these findings were communicated to dr. ___ ___ by dr ___ via telephone at 10:30 am on ___"
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "[0] the rectosigmoid colon and bladder are unremarkable. [1] no pelvic or inguinal lymphadenopathy or free fluid noted. [2] within the left anterior abdominal wall muscles, there is a 5.9 x 6.1 cm fat-density lesion, consistent with a lipoma (3:36)."
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "1. no evidence of retroperitoneal bleed. 2. small right and trace left pleural effusion. 3. lipoma along the left flank. [2]"
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "[0] no acute intracranial hemorrhage, large vascular territory infarct, shift of midline structures or mass effect is present. [1] the ventricles and sulci are normal in size and configuration. [2] the visible paranasal sinuses and mastoid air cells are well aerated."
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "1. no acute intracranial process. [0]"
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "[0] no filling defect is identified within the pulmonary arteries. [1] the thoracic aorta maintains a normal contour. [2] the heart and pericardium are within normal limits. [3] lungs show moderate bilateral pleural effusions, slightly increased since prior exam. [4] multifocal airspace opacities are seen throughout both lungs consistent with pneumonia, slightly better aerated in the upper lobes compared to ___. [5] since the last exam there is interval development of bronchietasis within the lingula, left upper lobe and right middle lobe. [6] small mediastinal lymph nodes are present, the largest of which measures 1.2 cm in the left paratracheal station. [7] limited views of the upper abdomen show ascites."
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "1. no evidence of pulmonary embolus. [0] 2. multifocal patchy opacity within both lungs consistent with pneumonia, minimally improved in the upper lobes compared to ___. [4] interval development of bronchiectasis within the lingula, left upper lobe and right middle lobe. [5] 3. bilateral pleural effusions, slightly increased in size. [3] 4. no intraluminal filling defect within the bilateral lower extremity veins from the popliteal to the common iliac ___. 5. left suprapatellar knee joint effusion and ___ cyst. 6. diffuse bodywall and extremity anasarca. large amount of free fluid within the included abdomen and pelvis."
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "[0] there is persistent nonenhancement of the left vertebral artery over a long segment from the proximal portion to the level of v3. [1] only a short segment close to the origin is seen to enhance. [2] previously noted small focus of slight enhancement, in the mid left vertebral artery is not seen on the present study. [3] there is mild decrease in the size of the left vertebral artery in the v3 segment compared to the prior study and is unclear if this is due to better spatial resolution/mild decrease in caliber. [4] there is narrowing of the left v4 segment with mild decrease in size compared to the prior study. [5] the left distal vertebral artery measures 2 mm, compared to the prior of 2.5 mm, appearing narrower distally. [6] the origins of the arch vessels are patent. [7] a small focus of calcification is noted at the brachiocephalic artery. [8] the right common carotid and the right vertebral arteries are patent. [9] the left common carotid artery is patent. [10] the internal carotid arteries are patent without focal flow-limiting stenosis, occlusion or obvious aneurysm. [11] circle of ___ and the intracranial arteries are incompletely imaged on the present study. [12] there is small amount of fluid/mucosal thickening and aerosolized secretions in the sphenoid sinus and in the ethmoid air cells. [13] there is redemonstration of the previously noted fractures, in the left c6 facet and adjacent to the transverse foramen, better evaluated on the prior c-spine study. [14] a few small scattered nodes are noted. the thyroid is unremarkable. [15] a few small scattered nodes are noted in both sides of the neck, some of which are borderline in size. [16] evaluation at the level of maxilla and mandible is limited due to dental artifacts."
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "1. persistent lack of enhancement of the left vertebral artery over a long segment. [0] mild decrease in the size of the distal left vertebral artery, in the v3 and v4 segments compared to the prior study. [3][4] only a short segment close to the origin is patent proximally. [1] follow up as clinically indicated to assess for stability/progression.  2. fractures noted involving the left c6 facet and transverse foramen, better evaluated on prior ct c spine study. other details as above. [13] 3. fluid and mucosal thickening with aerosolized secretions in the sphenoid sinus. [12]"
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "[0] there is no fracture or subluxation. [1] vertebral body alignment is normal. [2] the central canal appears patent at all levels, though note is made of hyperdense material within the central canal extending down to c2, consistent with extension of the intracranial extra-axial blood. [3] there is no prevertebral soft tissue swelling. [4] note is made of multilevel degenerative change throughout the cervical spine, with disc osteophyte complexes noted at c4/5, ___, ___, and ___. [5] degenerative change is noted at nearly all uncovertebral joints and facet joints bilaterally. [6] regional soft tissue structures are unremarkable. [7] visualized portions of the lung apices are notable for apical scarring."
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "1. no fracture or subluxation. [0] 2. extra-axial blood within the spinal canal, compatible with inferior extension of intracranial hemorrhage. [2]"
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "[0] the technical quality of the examination is good and allows to exclude pulmonary emboli at the level of the central, segmental and part of the subsegmental pulmonary arteries. [1] also, there are no indirect signs for pe, no wedge-shaped peripheral opacities, no pleural effusions, no focal oligemia, and no signs of pulmonary infarction. [2] the aorta is unremarkable, there are no signs of aortic dissection. [3] massive cardiomegaly with enlargement of both the right and the left aspect of the heart, but without inversion of the septum. [4] bilateral areas of atelectasis, combined to bilateral nonspecific ground-glass opacities. [5] mild esophageal distention without wall thickening, moderate lymph node enlargement in the mediastinum, most likely associated to cardiac failure. [6] small nodule in the left lobe of the thyroid. [7] mild ascites, marked dilatation of the inferior vena cava. [8] otherwise, no abnormalities seen in the imaged parts of the abdomen."
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "1. no evidence of acute or chronic pe. no aortic pathology. 2. massive cardiomegaly with bilateral areas of atelectasis and uncharacteristic ground- glass opacities. [3][4] 3. ascites and inferior vena cava dilatation. [7] small left thyroid nodule. [6] moderate mediastinal lymph node enlargement. [5]"
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "[0] the visualized lung bases are clear. [1] there are small bilateral fat-containing bochdalek type hernias. [2] the spleen appears normal. [3] there is an unchanged left adrenal mass measuring 15 x 18 mm. [4] the right adrenal gland appears normal. [5] at the head/neck junction of the pancreas is a 10 mm low-density lesion, which appears little changed. [6] numerous coarse calcifications are present throughout the pancreas, one of which appears to be in the vicinity of the pancreatic duct, but there is no pancreatic ductal dilation. [7] the gallbladder and liver appear within normal limits. [8] kidneys enhance, and excrete contrast symmetrically without suspicious masses or hydronephrosis. [9] hypodensities in the inferior and superior poles of the left kidney are likely cysts (300b:43, 41). [10] incidental note is made of a retroaortic left renal vein. [11] the abdominal aorta has mild atherosclerotic calcifications but is otherwise normal in caliber. [12] the stomach and abdominal loops of bowel appear normal. [13] no free air or free fluid is present. [14] scattered non-pathologically enlarged retroperitoneal and mesenteric lymph nodes are present. "
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "1. new fat-containing midline paraumbilical hernia. [1] 2. improved appearance of loculated air in the midline laparotomy scar. it may represent residual packing material; correlate clinically. no intra-abdominal or intrapelvic fluid collections. no evidence for enterocutaneous fistula. 3. rounded fatty lesion in the right mid deep pelvis may be an area of fat necrosis related to prior pelvic surgery. 4. stable cystic lesion in the head-neck junction of the pancreas. [5] stable left adrenal gland lesion, indeterminate. [4] both can be further evaluated by mri, similar to the recommendation on ___ examination."
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "[0] there is an endotracheal tube with the tip above the carina. [1] also noted is an ng tube within the esophagus. [2] there is no evidence of cervical spine fracture or dislocation. [3] the spinal canal is of normal caliber. [4] the prevertebral soft tissues are normal. [5] there is no evidence of enlarged mediastinal or hilar lymph nodes. [6] there are small bilateral pleural effusions and atelectasis, no evidence of pneumothorax in the visualized aspect of the lungs. [7] the inferior lobes are not entirely included. [8] multiplanar reconstructions confirm the above findings."
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "1. normal cervical spine ct. [2] 2. no evidence of pneumothorax. [6]"
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "[0] there is no extracalvarial soft tissue swelling. [1] the skull base and calvarium are intact. [2] the included paranasal sinuses are clear. [3] again noted is a small soft tissue structure posteriorly within the right mastoid air cells. [4] this may represent a small cholesterol granuloma. [5] the globes are intact with lenses in place. [6] intracranially, the ventricles are midline and normal in size and configuration. [7] the cortical sulci and subarachnoid cisterns are likewise unremarkable. [8] the ___-white matter interface is well defined. [9] again seen is relative high attenuation within the sella, similar to the prior examination with no progression. [10] there is no intracranial hemorrhage or ct evidence of acute cortical stroke. [11] the pituitary gland is hyperattenuated and the upper margin is convexed with slight bowing outward of the sella turcica. [12] this is best appreciated on reconstructed sagittal views. "
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "1. there is no intracranial hemorrhage. [10] the finding in the sella turcica may be due to underlying pituitary mass lesion (microadenoma) or possibly pituitary apoplexy. 2. the lesion is grossly stable since the prior examination. sella mri would be of benefit to further discriminate these entities."
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "[0] patient is status post left frontotemporoparietal craniotomy. [1] there has been interval decrease in post-surgical changes as demonstrated by decrease in size of left subdural frontotemporoparietal fluid collection and resolution of pneumocephalus. [2] there is still persistent left subdural fluid collection. [3] there is a persistent small amount of fluid within the left temporal calvarium which does not demonstrate restricted diffusion or ring enhancement to suggest abscess. [4] there has been interval decrease in susceptibility within the resection cavity consistent with decrease in hemorrhage. [5] there is a punctate focus of intrinsic t1 hyperintensity, which may represent persistent small amount of hemorrhage or calcification. [6] there has been interval increase in irregular thick nodular enhancement within the left temporal lobe extending up into the insular region. [7] two satellite ring-enhancing lesions are noted within the left frontal inferior gyrus. [8] there has been interval increase in ependymal extension into the occipital and temporal ___ of the left lateral ventricle. [9] there is restricted diffusion corresponding to some areas of ring enhancement predominantly in the posterior aspect of the ring enhancement consistent with high-grade tumor. [10] there has been interval increase in flair signal abnormality surrounding the lesion. [11] there has been interval increase in extent and thickening of left frontoparietal and temporal pachymeningeal enhancement. [12] this may represent post-surgical change rather tumor seeding of the pachymeninges. [13] there is mucosal thickening in the bilateral maxillary antra as well as some aerosolized secretions on the right. [14] there is mucosal thickening of the bilateral ethmoid air cells as well as complete opacification. [15] there is a mucosal retention cyst in the left sphenoid sinus. [16] the bilateral sphenoid sinuses demonstrate mucosal thickening. [17] there is fluid within the left mastoid air cells."
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "1. findings most consistent with progression of tumor, as detailed above, with increase ependymal seeding in the left lateral ventricle. [8][9] 2. pansinus mucosal thickening with areolized secretions, the latter likely representing acute sinusitis. [13]"
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "[0] there are bilateral pleural effusions and bibasilar atelectases. [1] there is minimal soft tissue density material surrounding the left internal carotid artery. [2] it extends to the subcutaneous tissues anterior to the left sternocleidomastoid muscle. [3] there is no evidence of contrast extravasation. [4] the parotid glands are unremarkable. [5] there are tiny lymph nodes within the neck. [6] the visualized portions of the brain are unremarkable. [7] the bones are normal."
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "1. minimal amount of soft tissue density material surrounding the left internal carotid artery and extending anteriorly into the subcutaneous tissues. [1][2] 2. bilateral pleural effusions. [0]"
+    },
+    {
+        "role": "user",
+        "content": ""
+    }
+]

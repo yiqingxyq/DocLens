@@ -1,0 +1,6 @@
+[
+    {
+      "role": "user",
+      "content": "Instruction: You are a helpful radiology assistant. Below is a part of a radiology report and a sentence in the summary of a radiology report. Please act as an impartial judge and evaluate whether the radiology report can fully entail the sentence in the summary. Also generate an explanation for your prediction and the idx of the sentences in the radiology report that support your prediction. Please output '1' or '0', where '1' means the sentence in the summary can be fully entailed by the radiology report, and '0' means the sentence in the summary contains information that cannot be entailed by the radiology report. Generate the answer in the following format:\nexplanation: the reason why the entailment prediction is made.\nprovenance: the idx of the sentences in the radiology report that support your prediction. Generate in the format of '[idx]'. If there are multiple idx, use '[idx1][idx2][idx3]'.\nentailment_prediction: 1 or 0, whether the sentence in the summary can be entailed.\n\nradiology report:\n__TEXT__\nsentence_in_report: __CLAIM__\n\n"
+    }
+]

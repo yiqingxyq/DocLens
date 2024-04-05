@@ -1,0 +1,30 @@
+[
+    {
+        "role": "system",
+        "content": "You are a helpful medical assistant. Read the clinical note and generate at least __MIN_CLAIM__ at most __MAX_CLAIM__ short claims that are supported by the clinical note. Each short claim should contain only one fact. The generated claims should cover all facts in the clinical note."
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "RESULTS\n\nEchocardiogram demonstrates decreased ejection fraction of 45%. Mitral regurgitation is present.\n\nLipid panel: Elevated cholesterol.\n\n"
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "Claim 1: The patient has a decreased ejection fraction of 45%.\nClaim 2: The patient has mitral regurgitation.\nClaim 3: The patient's lipid panel shows elevated cholesterol levels."
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "RESULTS\n\nX-ray of the right knee is unremarkable. Good bony alignment. No acute fractures.\n\nLabs: Within normal limits. White blood cell count is within normal limits. Kidney function is normal.\n\n"
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "Claim 1: The patient's right knee x-ray is unremarkable and \nClaim 2: The patient's right knee x-ray shows no acute fractures.\nClaim 3: The patient's right knee x-ray shows good bony alignment.\nClaim 4: The patient's white blood cell count is within normal limits.\nClaim 5: The patient's kidney function is normal.\nClaim 6: The patient's lab results are within normal limits."
+    },
+    {
+        "role": "user",
+        "content": ""
+    }
+]

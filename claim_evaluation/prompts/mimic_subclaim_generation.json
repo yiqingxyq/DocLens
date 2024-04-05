@@ -1,0 +1,70 @@
+[
+    {
+        "role": "system",
+        "content": "Instruction: You are a helpful medical assistant. Read the clinical report and generate at least __MIN_CLAIM__ at most __MAX_CLAIM__ short claims that are supported by the clinical report. Each short claim should contain only one fact. The generated claims should cover all facts in the clinical report."
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "1. no definite cerebral metastasis. 2. linear focus of hyperintensity on post-gadolinium sagittal mp-rage in a right occipital gyrus is most likely artifactual, even though a parenchymal or leptomeningeal metastasis is not entirely excluded. accordingly, followup exam should be obtained."
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "Claim 1: The patient has no definite cerebral metastasis.\nClaim 2: There is a linear focus of hyperintensity on post-gadolinium sagittal mp-rage in a right occipital gyrus.\nClaim 2: The linear focus is in the right occipital gyrus.\nClaim 3: A parenchymal or leptomeningeal metastasis is not entirely excluded.\nClaim 4: A followup exam should be obtained."
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "1. small phlegmonous density anterior to the left sacroiliac joint and possibly continuous with the joint space, with pockets of gas within the left iliacus, piriformis and gluteus minimus muscles with associated rarefaction of the posterior left iliac bone, highly suspicious for septic arthritis of the left sacroiliac joint and associated osteomyelitis. 2. small bilateral pleural effusions with associated atelectasis. underlying pneumonia cannot be excluded. 3. low attenuation of the liver is likely related to acute hepatitis or generalized edema. 4. gallbladder sludge not seen on ultrasound, but may be related to fasting state. gallbladder wall thickening is likely related to diffuse edema rather than acute cholecystitis. 5. splenomegaly. 6. small amount of free fluid within the pelvis. findings were discussed at the time of interpretation via telephone with dr. ___ ___."
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "Claim 1: The patient has small phlegmonous density anterior to the left sacroiliac joint.\nClaim 2: The patient's phlegmonous density is possibly continuous with the joint space.\nCLaim 3: There are pockets of gas within the left iliacus muscle, piriformis muscle and gluteus minimus muscles.\nClaim 4: The pockets of gas have associated rarefaction of the posterior left iliac bone.\nClaim 5: There is a strong suspicion of septic arthritis of the left sacroiliac joint and associated osteomyelitis.\nClaim 6: The patient has small bilateral pleural effusions with associated atelectasis.\nClaim 7: The underlying pneumonia cannot be excluded.\nClaim 8: The patient's low attenuation of the liver is likely related to acute hepatitis or generalized edema.\nClaim 9: Gallbladder sludge is not seen on ultrasound.\nClaim 10: The observation that Gallbladder sludge is not seen on ultrasound may be related to fasting state.\nClaim 11: The patient's gallbladder wall thickening is likely related to diffuse edema rather than acute cholecystitis.\nClaim 12: The patient has splenomegaly.\nClaim 13: The patient has small amount of free fluid within the pelvis."
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "no significant change from prior study. right-sided subdural hematoma and left-sided encephalomalacic changes again seen."
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "Claim 1: There is no significant change from prior study.\nClaim 2: A right-sided subdural hematoma is again seen.\nClaim 3: Left-sided encephalomalacic changes are again observed."
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "no filling defect is identified within the pulmonary arteries. the thoracic aorta maintains a normal contour. the heart and pericardium are within normal limits. lungs show moderate bilateral pleural effusions, slightly increased since prior exam. multifocal airspace opacities are seen throughout both lungs consistent with pneumonia, slightly better aerated in the upper lobes compared to ___. since the last exam there is interval development of bronchietasis within the lingula, left upper lobe and right middle lobe. small mediastinal lymph nodes are present, the largest of which measures 1.2 cm in the left paratracheal station. limited views of the upper abdomen show ascites."
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "Claim 1: No filling defect is identified within the pulmonary arteries.\nClaim 2: The thoracic aorta maintains a normal contour.\nClaim 3: The heart and pericardium are within normal limits.\nClaim 4: Lungs show moderate bilateral pleural effusions.\nClaim 5: The pleural effusions of lungs have slightly increased since the prior exam.\nClaim 6: Multifocal airspace opacities are seen throughout both lungs.\nClaim 7: The multifocal airspace opacities are consistent with pneumonia.\nClaim 8: Since the last exam, bronchietasis has developed within the lingula, left upper lobe and right middle lobe.\nClaim 9: Small mediastinal lymph nodes are present.\nClaim 10: The largest mediastinal lymph node measures 1.2 cm in the left paratracheal station.\nClaim 11: There are limited views of the upper abdomen that show ascites."
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "1. persistent lack of enhancement of the left vertebral artery over a long segment, mild decrease in the size of the distal left vertebral artery, in the v3 and v4 segments compared to the prior study. only a short segment close to the origin is patent proximally. follow up as clinically indicated to assess for stability/progression. 2. fractures noted involving the left c6 facet and transverse foramen, better evaluated on prior ct c spine study. other details as above. 3. fluid and mucosal thickening with aerosolized secretions in the sphenoid sinus."
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "Claim 1: There is a persistent lack of enhancement of the left vertebral artery over a long segment.\nClaim 2: There is a mild decrease in the size of the distal left vertebral artery in the v3 and v4 segments compared to the prior study.\nClaim 3: Only a short segment close to the origin is patent proximally.\nClaim 4: Follow-up is recommended as clinically indicated to assess for stability or progression.\nClaim 5: Fractures are noted involving the left c6 facet and transverse foramen.\nClaim 6: The fractures were better evaluated on the prior CT c-spine study.\nClaim 7: There are fluid and mucosal thickening with aerosolized secretions in the sphenoid sinus."
+    },
+    {
+        "role": "system",
+        "name": "example_user",
+        "content": "multiple skull fractures and hemorrhagic contusions as noted on the prior head ct. no evidence of c-spine fractures. djd of the c-spine. small amount of distal air posterior to the clavicles. the information has been communicated with ed physicians in person."
+    },
+    {
+        "role": "system",
+        "name": "example_assistant",
+        "content": "Claim 1: There are multiple skull fractures and hemorrhagic contusions.\nClaim 2: There is no evidence of c-spine fractures. djd of the c-spine. \nClaim 3: There is small amount of distal air posterior to the clavicles. "
+    },
+    {
+        "role": "user",
+        "content": ""
+    }
+]
