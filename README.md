@@ -115,7 +115,7 @@ The `.claim_min1max30.json` files contain the reference subclaims we generated.
 
 
 &nbsp;
-# Run Medical Text Generation
+## Run Medical Text Generation
 To run text generation, you'll need to call the `run.py` file. This will follow the instructions in the prompt file and generate a piece of text based on the `input` text of each example.
 
 We provide several example scripts unser `scripts/` named `run_DATASET.sh` or `run_DATASET_0shot.sh`. For example, 
@@ -126,7 +126,7 @@ We provide several example config files under `configs/`
 Note that for ACI-BENCH, we provide scripts for both full-note generation (e.g., `scripts/run_acibench_full.sh`) and per-section generation (e.g., `scripts/run_acibench_persection.sh`).
 
 &nbsp;
-# Evaluation with DocLens
+## Evaluation with DocLens
 The scripts for evaluation are similar to evaluating your own text. For example:
 ```
 bash scripts/eval_mimic_api.sh $SAVENAME
