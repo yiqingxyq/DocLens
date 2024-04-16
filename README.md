@@ -1,4 +1,10 @@
 # DocLens 🔍
+
+<p align="left">
+  <a href="https://opensource.org/license/mit"><img src="https://img.shields.io/badge/license-MIT-blue"></a>
+  <a href="https://arxiv.org/abs/2311.09581"><img src="https://img.shields.io/badge/arXiv-2311.09581-b31b1b.svg"></a>
+</p>
+
 Code for "DocLens: Multi-aspect Fine-grained Evaluation for Medical Text Generation" ([Arxiv](https://arxiv.org/abs/2311.09581))
 
 If you find our paper or code useful, please cite the paper:
