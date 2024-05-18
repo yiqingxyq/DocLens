@@ -9,13 +9,11 @@ Code for "DocLens: Multi-aspect Fine-grained Evaluation for Medical Text Generat
 
 If you find our paper or code useful, please cite the paper:
 ```
-@misc{xie2024doclens,
+@inproceedings{xie2024doclens,
       title={DocLens: Multi-aspect Fine-grained Evaluation for Medical Text Generation}, 
       author={Yiqing Xie and Sheng Zhang and Hao Cheng and Pengfei Liu and Zelalem Gero and Cliff Wong and Tristan Naumann and Hoifung Poon and Carolyn Rose},
       year={2024},
-      eprint={2311.09581},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+      booktitle={Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics}
 }
 ```
 
